@@ -1,0 +1,7 @@
+[gd_resource type="Theme" format=3 uid="uid://bwulbbd1tuwit"]
+
+[ext_resource type="FontFile" uid="uid://crct64he0f1lb" path="res://assets/fonts/Baltime.otf" id="1_cxucs"]
+
+[resource]
+default_font = ExtResource("1_cxucs")
+default_font_size = 32
