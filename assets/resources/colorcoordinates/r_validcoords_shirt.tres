@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Valid_Coordinates" format=3 uid="uid://beycvawbffjre"]
+
+[ext_resource type="Script" uid="uid://lyk5ub4cn8sb" path="res://assets/resources/colorcoordinates/valid_color_coordinates.gd" id="1_fengo"]
+
+[resource]
+script = ExtResource("1_fengo")
+name = "Kid_Shirt"
+coordinates = Array[Vector2]([Vector2(0.8, 0.1), Vector2(0.6, 0.1), Vector2(0.8, 0.2), Vector2(0.6, 0.2), Vector2(0.6, 0.4), Vector2(0.6, 0.6), Vector2(0.8, 0.7), Vector2(0.6, 0.7), Vector2(0.6, 0.8), Vector2(0.8, 0.9), Vector2(0.6, 0.9)])
+metadata/_custom_type_script = "uid://lyk5ub4cn8sb"

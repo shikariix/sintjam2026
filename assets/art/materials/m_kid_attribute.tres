@@ -1,0 +1,14 @@
+[gd_resource type="ShaderMaterial" format=3 uid="uid://dyi2f1fnmp23w"]
+
+[ext_resource type="Shader" uid="uid://2lv28w0oesi3" path="res://assets/art/shaders/sh_kid_attribute.gdshader" id="1_1774y"]
+[ext_resource type="Texture2D" uid="uid://dlkpl115x4nqb" path="res://assets/art/textures/_generic/T_Noise_Perlin_BlurredColour.png" id="2_fdrmx"]
+[ext_resource type="Texture2D" uid="uid://brav2kufbjyn2" path="res://assets/art/textures/child/hair/T_Palette_Kid_Hair.png" id="2_hn4uw"]
+
+[resource]
+shader = ExtResource("1_1774y")
+shader_parameter/noise_tex = ExtResource("2_fdrmx")
+shader_parameter/wiggle_intensity = 0.7
+shader_parameter/cells = Vector2(4, 4)
+shader_parameter/current_cell = Vector2(3, 3)
+shader_parameter/attribute_color_tex = ExtResource("2_hn4uw")
+shader_parameter/attribute_color = 0.9

@@ -1,0 +1,7 @@
+[gd_resource type="Theme" format=3 uid="uid://d70f2x3swfow"]
+
+[ext_resource type="FontFile" uid="uid://bom0sent7w4j" path="res://assets/art/fonts/Chalkiez-Regular.otf" id="1_e5l3s"]
+
+[resource]
+default_font = ExtResource("1_e5l3s")
+default_font_size = 32

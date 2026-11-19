@@ -1,0 +1,19 @@
+[gd_resource type="ShaderMaterial" format=3 uid="uid://deoovtboa6nwc"]
+
+[ext_resource type="Shader" uid="uid://ewt0rffgbo8r" path="res://assets/art/shaders/sh_kid_base.gdshader" id="1_icxpp"]
+[ext_resource type="Texture2D" uid="uid://dlkpl115x4nqb" path="res://assets/art/textures/_generic/T_Noise_Perlin_BlurredColour.png" id="2_uju3q"]
+[ext_resource type="Texture2D" uid="uid://bf280d2rcaaql" path="res://assets/art/textures/child/base/T_Palette_Kid_Shirt.png" id="3_pe3di"]
+[ext_resource type="Texture2D" uid="uid://bei3ar2s1hc1n" path="res://assets/art/textures/child/base/T_Palette_Kid_Skin.png" id="4_uju3q"]
+
+[resource]
+shader = ExtResource("1_icxpp")
+shader_parameter/noise_tex = ExtResource("2_uju3q")
+shader_parameter/wiggle_intensity = 0.7
+shader_parameter/skin_color_tex = ExtResource("4_uju3q")
+shader_parameter/skin_color = Vector2(0.9, 0)
+shader_parameter/shoes_color_tex = ExtResource("3_pe3di")
+shader_parameter/shoes_color = Vector2(0.635, 0.69)
+shader_parameter/shirt_color_tex = ExtResource("3_pe3di")
+shader_parameter/shirt_color = Vector2(0.6, 0.8)
+shader_parameter/pants_color_tex = ExtResource("3_pe3di")
+shader_parameter/pants_color = Vector2(0.8, 0.1)

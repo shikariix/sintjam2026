@@ -1,0 +1,9 @@
+[gd_resource type="ShaderMaterial" format=3 uid="uid://ba2n3w1hy18s3"]
+
+[ext_resource type="Shader" uid="uid://8rwj02v41pxt" path="res://assets/art/shaders/sh_main.gdshader" id="1_imulw"]
+[ext_resource type="Texture2D" uid="uid://dlkpl115x4nqb" path="res://assets/art/textures/_generic/T_Noise_Perlin_BlurredColour.png" id="2_aaa8t"]
+
+[resource]
+shader = ExtResource("1_imulw")
+shader_parameter/noise_tex = ExtResource("2_aaa8t")
+shader_parameter/wiggle_intensity = 0.7

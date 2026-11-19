@@ -1,0 +1,140 @@
+[gd_scene format=3 uid="uid://dasjg2ayo3hy0"]
+
+[ext_resource type="Material" uid="uid://ba2n3w1hy18s3" path="res://assets/art/materials/m_main.tres" id="1_mebpy"]
+[ext_resource type="Texture2D" uid="uid://dkfbdd3218w2o" path="res://assets/art/textures/styletest/T_StyleTest_BG_Color.png" id="2_whwb2"]
+[ext_resource type="Texture2D" uid="uid://do38qi57uptye" path="res://assets/art/textures/styletest/T_StyleTest_BG_shading.png" id="3_mhwm1"]
+[ext_resource type="Texture2D" uid="uid://bx6svuah1vl7h" path="res://assets/art/textures/styletest/T_StyleTest_WhiteBehind.png" id="4_3kjd4"]
+[ext_resource type="Texture2D" uid="uid://wgv8tbeq0rnm" path="res://assets/art/textures/styletest/T_StyleTest_Sint_Color.png" id="5_1f0jy"]
+[ext_resource type="Texture2D" uid="uid://dxft1ese4ie01" path="res://assets/art/textures/styletest/T_StyleTest_Sint_Shading.png" id="6_rj8vk"]
+[ext_resource type="Texture2D" uid="uid://dxgqrp0yklsfu" path="res://assets/art/textures/styletest/T_StyleTest_Sint_Line.png" id="7_ve6go"]
+[ext_resource type="Texture2D" uid="uid://cpuryp7qxbd5k" path="res://assets/art/textures/styletest/T_StyleTest_Sint_ExtraLine.png" id="8_equb2"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bhunq"]
+bg_color = Color(1, 1, 1, 1)
+
+[node name="StyleTest" type="Node2D" unique_id=997309815]
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1104601720]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=220062329]
+layer = -1
+
+[node name="Panel" type="Panel" parent="CanvasLayer" unique_id=297676066]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_bhunq")
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer" unique_id=598122796]
+modulate = Color(0, 1, 1, 1)
+material = ExtResource("1_mebpy")
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -512.0
+offset_top = -512.0
+offset_right = 512.0
+offset_bottom = 512.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_whwb2")
+
+[node name="TextureRect2" type="TextureRect" parent="CanvasLayer" unique_id=834461742]
+modulate = Color(0.18039216, 1, 1, 1)
+material = ExtResource("1_mebpy")
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -512.0
+offset_top = -512.0
+offset_right = 512.0
+offset_bottom = 512.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("3_mhwm1")
+
+[node name="TextureRect3" type="TextureRect" parent="CanvasLayer" unique_id=186317188]
+modulate = Color(0.40392157, 1, 1, 1)
+material = ExtResource("1_mebpy")
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -512.0
+offset_top = -512.0
+offset_right = 512.0
+offset_bottom = 512.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("4_3kjd4")
+
+[node name="TextureRect4" type="TextureRect" parent="CanvasLayer" unique_id=994282660]
+modulate = Color(0.5372549, 1, 1, 1)
+material = ExtResource("1_mebpy")
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -512.0
+offset_top = -512.0
+offset_right = 512.0
+offset_bottom = 512.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("5_1f0jy")
+
+[node name="TextureRect5" type="TextureRect" parent="CanvasLayer" unique_id=1307413763]
+modulate = Color(0.6392157, 1, 1, 1)
+material = ExtResource("1_mebpy")
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -512.0
+offset_top = -512.0
+offset_right = 512.0
+offset_bottom = 512.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("6_rj8vk")
+
+[node name="TextureRect6" type="TextureRect" parent="CanvasLayer" unique_id=1273773695]
+modulate = Color(0.8156863, 1, 1, 1)
+material = ExtResource("1_mebpy")
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -512.0
+offset_top = -512.0
+offset_right = 512.0
+offset_bottom = 512.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("7_ve6go")
+
+[node name="TextureRect7" type="TextureRect" parent="CanvasLayer" unique_id=317189192]
+modulate = Color(0, 1, 1, 1)
+material = ExtResource("1_mebpy")
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -512.0
+offset_top = -512.0
+offset_right = 512.0
+offset_bottom = 512.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("8_equb2")

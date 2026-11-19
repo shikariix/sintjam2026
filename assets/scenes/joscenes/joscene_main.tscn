@@ -1,0 +1,229 @@
+[gd_scene format=3 uid="uid://bwt8eeppgbqth"]
+
+[ext_resource type="Texture2D" uid="uid://b47jewflpicg3" path="res://assets/art/textures/concept-art-placeholders/T_Concept_Scene01_OpSchoot.png" id="1_tr10l"]
+[ext_resource type="Material" uid="uid://ba2n3w1hy18s3" path="res://assets/art/materials/m_main.tres" id="2_kjy2k"]
+[ext_resource type="Texture2D" uid="uid://bjktobjbqa2b5" path="res://assets/art/textures/child/base/T_Kid_WhiteBehind.png" id="3_ybc71"]
+[ext_resource type="Material" uid="uid://deoovtboa6nwc" path="res://assets/art/materials/m_kid_base.tres" id="4_p13ef"]
+[ext_resource type="Texture2D" uid="uid://dnp2uclp7aiwq" path="res://assets/art/textures/child/base/T_Kid_Color.png" id="5_ts1qc"]
+[ext_resource type="Texture2D" uid="uid://ya4weuvnuvjg" path="res://assets/art/textures/child/base/T_Kid_Shading.png" id="6_0ipee"]
+[ext_resource type="Texture2D" uid="uid://b1r6kcutw5200" path="res://assets/art/textures/child/base/T_Kid_Line.png" id="7_1uxkm"]
+[ext_resource type="Resource" uid="uid://bdfqlr7clie41" path="res://assets/resources/colorcoordinates/r_validcoords_hair.tres" id="7_7mxoa"]
+[ext_resource type="Script" uid="uid://dev8lfy3tv3y1" path="res://assets/scripts/josientest/generate_random_kids.gd" id="8_tr10l"]
+[ext_resource type="Resource" uid="uid://42yvf1ptb2ax" path="res://assets/resources/colorcoordinates/r_validcoords_skin.tres" id="9_tr10l"]
+[ext_resource type="Resource" uid="uid://beycvawbffjre" path="res://assets/resources/colorcoordinates/r_validcoords_shirt.tres" id="10_kjy2k"]
+[ext_resource type="Material" uid="uid://dyi2f1fnmp23w" path="res://assets/art/materials/m_kid_attribute.tres" id="11_0ipee"]
+[ext_resource type="Texture2D" uid="uid://u8n2rhdl1s1r" path="res://assets/art/textures/child/hair/T_Kid_Hair_Color.png" id="12_1uxkm"]
+[ext_resource type="Texture2D" uid="uid://bvgk8727v2gt2" path="res://assets/art/textures/child/hair/T_Kid_Hair_Shadow.png" id="13_7mxoa"]
+[ext_resource type="Texture2D" uid="uid://dtta5fq77hpo5" path="res://assets/art/textures/child/hair/T_Kid_Hair_Line.png" id="14_wcfqp"]
+[ext_resource type="Texture2D" uid="uid://k6xws40go486" path="res://assets/art/textures/child/hair/T_Kid_Hair_LineExtra.png" id="15_c86je"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xbecr"]
+bg_color = Color(1, 1, 1, 1)
+
+[node name="Joscene_Main" type="Node2D" unique_id=354808398]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=450030484]
+
+[node name="White_BG" type="Panel" parent="CanvasLayer" unique_id=693969971]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_xbecr")
+
+[node name="StaticArt_Scaler" type="Control" parent="CanvasLayer" unique_id=625880919]
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -1280.0
+offset_top = -720.0
+offset_right = 1280.0
+offset_bottom = 720.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.75, 0.75)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="Scene01_OpSchoot" type="Control" parent="CanvasLayer/StaticArt_Scaler" unique_id=328959312]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="BG" type="TextureRect" parent="CanvasLayer/StaticArt_Scaler/Scene01_OpSchoot" unique_id=717211125]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -1280.0
+offset_top = -720.0
+offset_right = 1280.0
+offset_bottom = 720.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture = ExtResource("1_tr10l")
+
+[node name="Kid" type="Control" parent="CanvasLayer/StaticArt_Scaler/Scene01_OpSchoot" unique_id=1181922525]
+anchors_preset = 0
+offset_left = 1200.0
+offset_top = 408.0
+offset_right = 1712.0
+offset_bottom = 920.0
+
+[node name="Generate_Random" type="Node" parent="CanvasLayer/StaticArt_Scaler/Scene01_OpSchoot/Kid" unique_id=437412943]
+script = ExtResource("8_tr10l")
+basematerial = ExtResource("4_p13ef")
+hairmaterial = ExtResource("11_0ipee")
+skin_coords = ExtResource("9_tr10l")
+shirt_coords = ExtResource("10_kjy2k")
+hair_coords = ExtResource("7_7mxoa")
+
+[node name="Base" type="Control" parent="CanvasLayer/StaticArt_Scaler/Scene01_OpSchoot/Kid" unique_id=1664224078]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="BG" type="TextureRect" parent="CanvasLayer/StaticArt_Scaler/Scene01_OpSchoot/Kid/Base" unique_id=90675817]
+modulate = Color(0, 1, 1, 1)
+material = ExtResource("2_kjy2k")
+layout_mode = 0
+offset_right = 512.0
+offset_bottom = 512.0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture = ExtResource("3_ybc71")
+stretch_mode = 2
+
+[node name="Color" type="TextureRect" parent="CanvasLayer/StaticArt_Scaler/Scene01_OpSchoot/Kid/Base" unique_id=1122183113]
+modulate = Color(0.32941177, 0, 1, 1)
+material = ExtResource("4_p13ef")
+layout_mode = 0
+offset_right = 512.0
+offset_bottom = 512.0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture = ExtResource("5_ts1qc")
+stretch_mode = 2
+
+[node name="Shading" type="TextureRect" parent="CanvasLayer/StaticArt_Scaler/Scene01_OpSchoot/Kid/Base" unique_id=178002922]
+modulate = Color(0.68235296, 0.2, 1, 1)
+material = ExtResource("4_p13ef")
+layout_mode = 0
+offset_right = 512.0
+offset_bottom = 512.0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture = ExtResource("6_0ipee")
+stretch_mode = 2
+
+[node name="Line" type="TextureRect" parent="CanvasLayer/StaticArt_Scaler/Scene01_OpSchoot/Kid/Base" unique_id=1824442951]
+modulate = Color(1, 0.4862745, 1, 1)
+material = ExtResource("4_p13ef")
+layout_mode = 0
+offset_right = 512.0
+offset_bottom = 512.0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture = ExtResource("7_1uxkm")
+stretch_mode = 2
+
+[node name="Hair" type="Control" parent="CanvasLayer/StaticArt_Scaler/Scene01_OpSchoot/Kid" unique_id=1754038106]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -33.333344
+offset_top = -256.00003
+offset_right = 222.66663
+offset_bottom = -1.5258789e-05
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Color" type="TextureRect" parent="CanvasLayer/StaticArt_Scaler/Scene01_OpSchoot/Kid/Hair" unique_id=554862228]
+modulate = Color(0.12156863, 1, 1, 1)
+material = ExtResource("11_0ipee")
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -128.0
+offset_top = -128.0
+offset_right = 896.0
+offset_bottom = 896.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("12_1uxkm")
+
+[node name="Shading" type="TextureRect" parent="CanvasLayer/StaticArt_Scaler/Scene01_OpSchoot/Kid/Hair" unique_id=1781437503]
+modulate = Color(0.3647059, 1, 1, 1)
+material = ExtResource("11_0ipee")
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -128.0
+offset_top = -128.0
+offset_right = 896.0
+offset_bottom = 896.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("13_7mxoa")
+
+[node name="Line" type="TextureRect" parent="CanvasLayer/StaticArt_Scaler/Scene01_OpSchoot/Kid/Hair" unique_id=640896505]
+modulate = Color(0.58431375, 1, 1, 1)
+material = ExtResource("11_0ipee")
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -128.0
+offset_top = -128.0
+offset_right = 896.0
+offset_bottom = 896.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("14_wcfqp")
+
+[node name="LineExtra" type="TextureRect" parent="CanvasLayer/StaticArt_Scaler/Scene01_OpSchoot/Kid/Hair" unique_id=449310972]
+modulate = Color(0.80784315, 1, 1, 1)
+material = ExtResource("11_0ipee")
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -128.0
+offset_top = -128.0
+offset_right = 896.0
+offset_bottom = 896.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("15_c86je")
