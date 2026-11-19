@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://bwx331fposoce"]
+
+[ext_resource type="PackedScene" uid="uid://cikhbhlpntvl8" path="res://assets/scenes/sarah_testing.tscn" id="1_cb66b"]
+
+[node name="Game" type="Node2D" unique_id=412370994]
+
+[node name="SarahTesting" parent="." unique_id=1870176279 instance=ExtResource("1_cb66b")]

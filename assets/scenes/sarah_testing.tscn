@@ -1,0 +1,69 @@
+[gd_scene format=3 uid="uid://cikhbhlpntvl8"]
+
+[ext_resource type="Texture2D" uid="uid://bdetdvgyth3mm" path="res://SP_Icon_Temporary.png" id="1_txqup"]
+[ext_resource type="Script" uid="uid://buamn4yt55dex" path="res://assets/scripts/draggable.gd" id="2_3dqbd"]
+[ext_resource type="Script" uid="uid://b1eydlehtwqaq" path="res://assets/scripts/droppable.gd" id="3_06fbs"]
+[ext_resource type="Script" uid="uid://db3hoo835nija" path="res://assets/scripts/sinterpraat.gd" id="3_g03mq"]
+[ext_resource type="Resource" uid="uid://b1rooktrp3j6a" path="res://assets/resources/presents/videogame.tres" id="3_gv1ky"]
+
+[node name="SarahTesting" type="Control" unique_id=1870176279]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -7.0
+offset_top = -25.0
+offset_right = -7.0
+offset_bottom = -25.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="DragContainer" type="PanelContainer" parent="." unique_id=1105740499]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="DragContainer" unique_id=700768084]
+layout_mode = 2
+
+[node name="CenterContainer" type="CenterContainer" parent="DragContainer/HBoxContainer" unique_id=468814024]
+layout_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="DragContainer/HBoxContainer/CenterContainer" unique_id=969677802]
+custom_maximum_size = Vector2(80, 80)
+layout_mode = 2
+script = ExtResource("2_3dqbd")
+present_data = ExtResource("3_gv1ky")
+
+[node name="CenterContainer2" type="CenterContainer" parent="DragContainer/HBoxContainer" unique_id=1007606308]
+layout_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="DragContainer/HBoxContainer/CenterContainer2" unique_id=1349645176]
+custom_maximum_size = Vector2(80, 80)
+layout_mode = 2
+texture = ExtResource("1_txqup")
+
+[node name="CenterContainer3" type="CenterContainer" parent="DragContainer/HBoxContainer" unique_id=2058941819]
+layout_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="DragContainer/HBoxContainer/CenterContainer3" unique_id=574469753]
+custom_maximum_size = Vector2(80, 80)
+layout_mode = 2
+texture = ExtResource("1_txqup")
+
+[node name="DropTarget" type="PanelContainer" parent="." unique_id=85802247]
+custom_minimum_size = Vector2(80, 80)
+layout_mode = 0
+offset_left = 321.0
+offset_top = 178.0
+offset_right = 401.0
+offset_bottom = 258.0
+
+[node name="TextureRect" type="TextureRect" parent="DropTarget" unique_id=1951099131]
+layout_mode = 2
+script = ExtResource("3_06fbs")
+
+[node name="TestSinterklaas" type="Sprite2D" parent="." unique_id=1390171169]
+script = ExtResource("3_g03mq")
+vraag = "En wat zou jij graag van de Sint willen krijgen?"
+tekstjes = Array[String](["Ohoho!", "Wie wil dat nou niet?", "Uitstekende keuze!", "Staat genoteerd."])
