@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Present_Resource" format=3 uid="uid://cfc8188g35vvb"]
+
+[ext_resource type="Script" uid="uid://b1jls3pyt88l2" path="res://assets/resources/presents/PresentResource.gd" id="1_nklfo"]
+[ext_resource type="Texture2D" uid="uid://bdetdvgyth3mm" path="res://SP_Icon_Temporary.png" id="2_ar7ff"]
+
+[resource]
+script = ExtResource("1_nklfo")
+texture = ExtResource("2_ar7ff")
+present_name = "Chocolade Letter"
+silliness = 1
+metadata/_custom_type_script = "uid://b1jls3pyt88l2"

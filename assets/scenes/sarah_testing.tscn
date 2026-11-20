@@ -1,6 +1,5 @@
 [gd_scene format=3 uid="uid://cikhbhlpntvl8"]
 
-[ext_resource type="Texture2D" uid="uid://bdetdvgyth3mm" path="res://SP_Icon_Temporary.png" id="1_txqup"]
 [ext_resource type="Script" uid="uid://buamn4yt55dex" path="res://assets/scripts/draggable.gd" id="2_3dqbd"]
 [ext_resource type="Script" uid="uid://b1eydlehtwqaq" path="res://assets/scripts/droppable.gd" id="3_06fbs"]
 [ext_resource type="Script" uid="uid://db3hoo835nija" path="res://assets/scripts/sinterpraat.gd" id="3_g03mq"]
@@ -11,17 +10,19 @@ layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = -7.0
-offset_top = -25.0
-offset_right = -7.0
-offset_bottom = -25.0
 grow_horizontal = 2
 grow_vertical = 2
 
 [node name="DragContainer" type="PanelContainer" parent="." unique_id=1105740499]
-layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -84.0
+offset_top = 70.0
+offset_right = 84.0
+offset_bottom = 150.0
+grow_horizontal = 2
 
 [node name="HBoxContainer" type="HBoxContainer" parent="DragContainer" unique_id=700768084]
 layout_mode = 2
@@ -41,7 +42,8 @@ layout_mode = 2
 [node name="TextureRect" type="TextureRect" parent="DragContainer/HBoxContainer/CenterContainer2" unique_id=1349645176]
 custom_maximum_size = Vector2(80, 80)
 layout_mode = 2
-texture = ExtResource("1_txqup")
+script = ExtResource("2_3dqbd")
+present_data = ExtResource("3_gv1ky")
 
 [node name="CenterContainer3" type="CenterContainer" parent="DragContainer/HBoxContainer" unique_id=2058941819]
 layout_mode = 2
@@ -49,7 +51,8 @@ layout_mode = 2
 [node name="TextureRect" type="TextureRect" parent="DragContainer/HBoxContainer/CenterContainer3" unique_id=574469753]
 custom_maximum_size = Vector2(80, 80)
 layout_mode = 2
-texture = ExtResource("1_txqup")
+script = ExtResource("2_3dqbd")
+present_data = ExtResource("3_gv1ky")
 
 [node name="DropTarget" type="PanelContainer" parent="." unique_id=85802247]
 custom_minimum_size = Vector2(80, 80)
@@ -60,6 +63,30 @@ offset_right = 401.0
 offset_bottom = 258.0
 
 [node name="TextureRect" type="TextureRect" parent="DropTarget" unique_id=1951099131]
+layout_mode = 2
+script = ExtResource("3_06fbs")
+
+[node name="DropTarget2" type="PanelContainer" parent="." unique_id=1559440959]
+custom_minimum_size = Vector2(80, 80)
+layout_mode = 0
+offset_left = 490.0
+offset_top = 322.0
+offset_right = 570.0
+offset_bottom = 402.0
+
+[node name="TextureRect" type="TextureRect" parent="DropTarget2" unique_id=2053775041]
+layout_mode = 2
+script = ExtResource("3_06fbs")
+
+[node name="DropTarget3" type="PanelContainer" parent="." unique_id=221755739]
+custom_minimum_size = Vector2(80, 80)
+layout_mode = 0
+offset_left = 641.0
+offset_top = 190.0
+offset_right = 721.0
+offset_bottom = 270.0
+
+[node name="TextureRect" type="TextureRect" parent="DropTarget3" unique_id=1011598678]
 layout_mode = 2
 script = ExtResource("3_06fbs")
 
