@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Present_Resource" format=3 uid="uid://dvjmm8t1u7nql"]
+
+[ext_resource type="Script" uid="uid://b1jls3pyt88l2" path="res://assets/resources/presents/PresentResource.gd" id="1_mgpb4"]
+[ext_resource type="Texture2D" uid="uid://bdetdvgyth3mm" path="res://SP_Icon_Temporary.png" id="2_spx2j"]
+
+[resource]
+script = ExtResource("1_mgpb4")
+texture = ExtResource("2_spx2j")
+present_name = "Knuffel kat"
+silliness = 2
+metadata/_custom_type_script = "uid://b1jls3pyt88l2"

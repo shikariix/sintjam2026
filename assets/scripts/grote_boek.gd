@@ -1,14 +1,16 @@
 class_name Grote_Boek
 extends Node
 
-var kinderen: Array[String] #moet een array van kinderen worden?
-var gekochte_cadeaus: Array[Present_Resource]
+var kids: Array[String] #moet een array van kinderen worden?
+@export var purchased_gifts: Array[Present_Resource] #todo: remove export
 
-# Called when the node enters the scene tree for the first time.
-func _ready() -> void:
-	pass # Replace with function body.
+func add_gift(new_gift: Present_Resource) -> void:
+	purchased_gifts.append(new_gift)
+	
+func remove_gift(index: int) -> void:
+	purchased_gifts.remove_at(index)
 
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
+func add_kid() -> void:
+	#add kid info to book
 	pass
+	

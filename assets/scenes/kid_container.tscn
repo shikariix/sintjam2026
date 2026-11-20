@@ -1,0 +1,37 @@
+[gd_scene format=3 uid="uid://d3l0lm3mqpc32"]
+
+[ext_resource type="Texture2D" uid="uid://bdetdvgyth3mm" path="res://SP_Icon_Temporary.png" id="1_6d7rt"]
+
+[node name="KidContainer" type="PanelContainer" unique_id=698149976]
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=1710772938]
+layout_mode = 2
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 20
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer" unique_id=856867857]
+layout_mode = 2
+
+[node name="KidImage" type="TextureRect" parent="MarginContainer/HBoxContainer" unique_id=1138492480]
+layout_mode = 2
+texture = ExtResource("1_6d7rt")
+stretch_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/HBoxContainer" unique_id=1283247504]
+layout_mode = 2
+
+[node name="KidName" type="Label" parent="MarginContainer/HBoxContainer/VBoxContainer" unique_id=954849116]
+layout_mode = 2
+text = "Placeholder"
+
+[node name="Wil Graag" type="Label" parent="MarginContainer/HBoxContainer/VBoxContainer" unique_id=756893064]
+layout_mode = 2
+text = "Wil graag:"
+
+[node name="Label" type="Label" parent="MarginContainer/HBoxContainer/VBoxContainer" unique_id=566098569]
+layout_mode = 2
+text = "Zoet/Stout"

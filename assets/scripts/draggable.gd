@@ -9,8 +9,7 @@ extends TextureRect
 func _ready() -> void:
 	set_texture(present_data.texture)
 	
-func _get_drag_data(at_position: Vector2) -> Variant:
-	print(at_position)
+func _get_drag_data(_at_position: Vector2) -> Variant:
 	
 	var preview_texture = TextureRect.new()
 	preview_texture.texture = texture
