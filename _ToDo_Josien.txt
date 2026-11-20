@@ -1,0 +1,37 @@
+
+Design:
+	- grote boek UI
+	- sintertoys popup UI
+	- dorp bovenbalk UI
+
+Artwork:
+	- full art: sintertoys
+	- full art: dorp
+	- full art: boek bg
+	- full art: titelscherm (optioneel)
+	- UI art: knop bg
+	- UI art: grote boek icon
+	- UI art: terug knop icon
+	- UI art: grote boek componenten
+		> kind portret outline
+		> kind portret achtergrond?
+		> score sterren oid
+		> (meer moet nog ontworpen)
+	- UI art: sintertoys popup componenten
+	- UI art: dorp bovenbalk
+
+UI implementatie:
+	- het grote boek
+	- sintertoys popup
+
+Tech art:
+	- fadeout / fadein in stijl
+	- kind-op-schoot swap in stijl (optioneel)
+
+
+
+Done:
+	- alle scenes concept art
+	- aanpasbaar kind systeem
+	- aanpasbaar kind art
+	- full art: bij sint op schoot

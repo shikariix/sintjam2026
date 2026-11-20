@@ -13,7 +13,7 @@ extends Resource
 # enums keys and matching coordinates at bottom of script for ease of adding new properties
 
 func _init( p_name = "", 
-			p_hair_style = HAIRSTYLE.DIAGONAL, 
+			p_hair_style = HAIRSTYLE.BALD, 
 			p_hair_color = HAIRCOLOR.WHITE, 
 			p_skin_color = SKINCOLOR.RUST, 
 			p_shirt_color = CLOTHESCOLOR.WHITE, 
@@ -35,7 +35,7 @@ enum SKINCOLOR { DARK = 0, RUST = 1, BROWN = 2, ORANGE = 3, TAN = 4, PALE = 5, P
 enum CLOTHESCOLOR { WHITE = 0, GREY = 1, LIGHT_RED = 2, RED = 3, YELLOW = 4, GREEN = 5, LIGHT_BLUE = 6, BLUE = 7, PURPLE = 8, PINK = 9, HOT_PINK = 10 }
 enum HAIRSTYLE { BALD = 0, DIAGONAL = 1, MIDDLE_PART = 2, SPIKY = 3, 
 				EMO = 4, CURLY_SHORT = 5, CURLY_SQUARE = 6, BOWL = 7, 
-				LONG_STRAIGTH = 8, BRAIDS = 9, PIGTAILS = 10, LONG_CURLY = 11, 
+				LONG_STRAIGTH = 8, BRAIDS = 9, PIGTAILS = 10, CURLY_LONG = 11, 
 				DOUBLE_BUNS = 12, BOB = 13, SINGLE_BUN = 14, MOHAWK = 15 }
 
 const haircolor_coords : Array[Vector2] = [ Vector2(.0, .1), Vector2(.0, .2), Vector2(.0, .3), Vector2(.0, .4), Vector2(.0, .6), Vector2(.0, .7), Vector2(.0, .8), Vector2(.0, .9) ]

@@ -1,0 +1,419 @@
+[gd_scene format=3 uid="uid://volwgq0ep10r"]
+
+[ext_resource type="Script" uid="uid://dev8lfy3tv3y1" path="res://assets/scripts/josientest/generate_random_kids.gd" id="1_m0uoy"]
+[ext_resource type="Material" uid="uid://deoovtboa6nwc" path="res://assets/art/materials/m_kid_base.tres" id="2_tfdcd"]
+[ext_resource type="Material" uid="uid://dyi2f1fnmp23w" path="res://assets/art/materials/m_kid_attribute.tres" id="3_j0jsv"]
+[ext_resource type="Resource" uid="uid://42yvf1ptb2ax" path="res://assets/resources/colorcoordinates/r_validcoords_skin.tres" id="4_fg5ui"]
+[ext_resource type="Resource" uid="uid://beycvawbffjre" path="res://assets/resources/colorcoordinates/r_validcoords_shirt.tres" id="5_e6fmw"]
+[ext_resource type="Resource" uid="uid://bdfqlr7clie41" path="res://assets/resources/colorcoordinates/r_validcoords_hair.tres" id="6_hftg4"]
+[ext_resource type="Script" uid="uid://w2q2ld2nq8q5" path="res://assets/scripts/josientest/apply_kid_data.gd" id="7_y8kie"]
+[ext_resource type="Resource" uid="uid://dp7up1miikum8" path="res://assets/resources/kids/r_kid_jimothy.tres" id="8_p0vdf"]
+[ext_resource type="Texture2D" uid="uid://b47jewflpicg3" path="res://assets/art/textures/concept-art-placeholders/T_Concept_Scene01_OpSchoot.png" id="9_j4rv2"]
+[ext_resource type="Material" uid="uid://ba2n3w1hy18s3" path="res://assets/art/materials/m_main.tres" id="10_xtqyo"]
+[ext_resource type="Texture2D" uid="uid://cav5yuen2wa1v" path="res://assets/art/textures/s01_op-schoot/T_S01_BG_0_color.png" id="11_r35un"]
+[ext_resource type="Texture2D" uid="uid://d2s3b32t8tdgh" path="res://assets/art/textures/s01_op-schoot/T_S01_BG_1_line.png" id="12_wxr2b"]
+[ext_resource type="Texture2D" uid="uid://bcc3m0pfsoawj" path="res://assets/art/textures/s01_op-schoot/T_S01_BG_2_shadow.png" id="13_cdhww"]
+[ext_resource type="Texture2D" uid="uid://cbxidvnnnthgw" path="res://assets/art/textures/s01_op-schoot/T_S01_BG_3_vignette.png" id="14_l15pt"]
+[ext_resource type="Texture2D" uid="uid://ch65d6tmac1t2" path="res://assets/art/textures/s01_op-schoot/T_S01_BG_4_vignette.png" id="15_lqsuf"]
+[ext_resource type="Texture2D" uid="uid://dl6lqfxdtlv7i" path="res://assets/art/textures/s01_op-schoot/T_S01_BG_5_vignette.png" id="16_wg5qu"]
+[ext_resource type="Texture2D" uid="uid://dfak15e8naksm" path="res://assets/art/textures/s01_op-schoot/T_S01_Char_0_white.png" id="17_6jxxr"]
+[ext_resource type="Texture2D" uid="uid://bxm530k38o3nm" path="res://assets/art/textures/s01_op-schoot/T_S01_Char_1_color.png" id="18_sb3u3"]
+[ext_resource type="Texture2D" uid="uid://cmt6ms40mveav" path="res://assets/art/textures/s01_op-schoot/T_S01_Char_2_shadow.png" id="19_f2ouh"]
+[ext_resource type="Texture2D" uid="uid://ckueqvb6lmttw" path="res://assets/art/textures/s01_op-schoot/T_S01_Char_3_line.png" id="20_w3un5"]
+[ext_resource type="Texture2D" uid="uid://2wrnfe2b2i4" path="res://assets/art/textures/s01_op-schoot/T_S01_Char_4_lineextra.png" id="21_uknjk"]
+[ext_resource type="Texture2D" uid="uid://bjktobjbqa2b5" path="res://assets/art/textures/child/base/T_Kid_WhiteBehind.png" id="22_bgw54"]
+[ext_resource type="Texture2D" uid="uid://dnp2uclp7aiwq" path="res://assets/art/textures/child/base/T_Kid_Color.png" id="23_vh3eg"]
+[ext_resource type="Texture2D" uid="uid://ya4weuvnuvjg" path="res://assets/art/textures/child/base/T_Kid_Shading.png" id="24_4l0is"]
+[ext_resource type="Texture2D" uid="uid://b1r6kcutw5200" path="res://assets/art/textures/child/base/T_Kid_Line.png" id="25_1kvn7"]
+[ext_resource type="Texture2D" uid="uid://u8n2rhdl1s1r" path="res://assets/art/textures/child/hair/T_Kid_Hair_Color.png" id="26_rxc11"]
+[ext_resource type="Texture2D" uid="uid://bvgk8727v2gt2" path="res://assets/art/textures/child/hair/T_Kid_Hair_Shadow.png" id="27_3nif1"]
+[ext_resource type="Texture2D" uid="uid://dtta5fq77hpo5" path="res://assets/art/textures/child/hair/T_Kid_Hair_Line.png" id="28_wtbdc"]
+[ext_resource type="Texture2D" uid="uid://k6xws40go486" path="res://assets/art/textures/child/hair/T_Kid_Hair_LineExtra.png" id="29_b3dvi"]
+[ext_resource type="Texture2D" uid="uid://ba3fe2x64vacl" path="res://assets/art/textures/s01_op-schoot/T_S01_Hand_0_white.png" id="30_n2758"]
+[ext_resource type="Texture2D" uid="uid://b7yaf5msifafk" path="res://assets/art/textures/s01_op-schoot/T_S01_Hand_1_color.png" id="31_w1j0k"]
+[ext_resource type="Texture2D" uid="uid://cgk2tjj7r05h8" path="res://assets/art/textures/s01_op-schoot/T_S01_Hand_2_shadow.png" id="32_mnb76"]
+[ext_resource type="Texture2D" uid="uid://w87jgk8dpbne" path="res://assets/art/textures/s01_op-schoot/T_S01_Hand_3_line.png" id="33_1x284"]
+[ext_resource type="Texture2D" uid="uid://e6x8k1vorird" path="res://assets/art/textures/s01_op-schoot/T_S01_Hand_4_lineextra.png" id="34_oj28p"]
+
+[node name="Visuals_S01_OpSchoot" type="Control" unique_id=661635230]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Generate_Random_Kid" type="Node" parent="." unique_id=852471993]
+script = ExtResource("1_m0uoy")
+basematerial = ExtResource("2_tfdcd")
+hairmaterial = ExtResource("3_j0jsv")
+skin_coords = ExtResource("4_fg5ui")
+shirt_coords = ExtResource("5_e6fmw")
+hair_coords = ExtResource("6_hftg4")
+
+[node name="Apply_Kid_Data" type="Node" parent="." unique_id=1501139519]
+script = ExtResource("7_y8kie")
+debug_data = ExtResource("8_p0vdf")
+basematerial = ExtResource("2_tfdcd")
+hairmaterial = ExtResource("3_j0jsv")
+
+[node name="concept art" type="TextureRect" parent="." unique_id=2124070547]
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -1280.0
+offset_top = -720.0
+offset_right = 1280.0
+offset_bottom = 720.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture = ExtResource("9_j4rv2")
+
+[node name="Background" type="Control" parent="." unique_id=1613776630]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="Background" unique_id=989922517]
+modulate = Color(0, 1, 1, 1)
+material = ExtResource("10_xtqyo")
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("11_r35un")
+
+[node name="TextureRect2" type="TextureRect" parent="Background" unique_id=1418470830]
+modulate = Color(0.2901961, 1, 1, 1)
+material = ExtResource("10_xtqyo")
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("12_wxr2b")
+
+[node name="TextureRect3" type="TextureRect" parent="Background" unique_id=1536397057]
+modulate = Color(0.42745098, 1, 1, 1)
+material = ExtResource("10_xtqyo")
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("13_cdhww")
+
+[node name="Vignette_BluePink" type="TextureRect" parent="Background" unique_id=1585511589]
+modulate = Color(0.5921569, 1, 1, 1)
+material = ExtResource("10_xtqyo")
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("14_l15pt")
+
+[node name="Vignette_Purple" type="TextureRect" parent="Background" unique_id=1252172160]
+modulate = Color(0.79607844, 1, 1, 1)
+material = ExtResource("10_xtqyo")
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("15_lqsuf")
+
+[node name="Vignette_Black" type="TextureRect" parent="Background" unique_id=847953590]
+material = ExtResource("10_xtqyo")
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("16_wg5qu")
+
+[node name="Characters" type="Control" parent="." unique_id=909352330]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="White" type="TextureRect" parent="Characters" unique_id=284496785]
+modulate = Color(0, 1, 1, 1)
+material = ExtResource("10_xtqyo")
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("17_6jxxr")
+
+[node name="Color" type="TextureRect" parent="Characters" unique_id=1576740998]
+modulate = Color(0.2901961, 1, 1, 1)
+material = ExtResource("10_xtqyo")
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("18_sb3u3")
+
+[node name="Shadow" type="TextureRect" parent="Characters" unique_id=1245085562]
+modulate = Color(0.4862745, 1, 1, 1)
+material = ExtResource("10_xtqyo")
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("19_f2ouh")
+
+[node name="Line" type="TextureRect" parent="Characters" unique_id=895972504]
+modulate = Color(0.69803923, 1, 1, 1)
+material = ExtResource("10_xtqyo")
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("20_w3un5")
+
+[node name="LineAccidentals" type="TextureRect" parent="Characters" unique_id=1578364394]
+material = ExtResource("10_xtqyo")
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("21_uknjk")
+
+[node name="Kid" type="Control" parent="." unique_id=8845035]
+anchors_preset = 0
+offset_left = 1200.0
+offset_top = 408.0
+offset_right = 1712.0
+offset_bottom = 920.0
+
+[node name="Base" type="Control" parent="Kid" unique_id=951696508]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="BG" type="TextureRect" parent="Kid/Base" unique_id=1353725821]
+modulate = Color(0, 1, 1, 1)
+material = ExtResource("10_xtqyo")
+layout_mode = 0
+offset_right = 512.0
+offset_bottom = 512.0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture = ExtResource("22_bgw54")
+stretch_mode = 2
+
+[node name="Color" type="TextureRect" parent="Kid/Base" unique_id=296402093]
+modulate = Color(0.32941177, 0, 1, 1)
+material = ExtResource("2_tfdcd")
+layout_mode = 0
+offset_right = 512.0
+offset_bottom = 512.0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture = ExtResource("23_vh3eg")
+stretch_mode = 2
+
+[node name="Shading" type="TextureRect" parent="Kid/Base" unique_id=1373260057]
+modulate = Color(0.68235296, 0.2, 1, 1)
+material = ExtResource("2_tfdcd")
+layout_mode = 0
+offset_right = 512.0
+offset_bottom = 512.0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture = ExtResource("24_4l0is")
+stretch_mode = 2
+
+[node name="Line" type="TextureRect" parent="Kid/Base" unique_id=2108072167]
+modulate = Color(1, 0.4862745, 1, 1)
+material = ExtResource("2_tfdcd")
+layout_mode = 0
+offset_right = 512.0
+offset_bottom = 512.0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture = ExtResource("25_1kvn7")
+stretch_mode = 2
+
+[node name="Hair" type="Control" parent="Kid" unique_id=123454467]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -33.333344
+offset_top = -256.00003
+offset_right = 222.66663
+offset_bottom = -1.5258789e-05
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Color" type="TextureRect" parent="Kid/Hair" unique_id=1369814155]
+modulate = Color(0.12156863, 1, 1, 1)
+material = ExtResource("3_j0jsv")
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -128.0
+offset_top = -128.0
+offset_right = 896.0
+offset_bottom = 896.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("26_rxc11")
+
+[node name="Shading" type="TextureRect" parent="Kid/Hair" unique_id=680103061]
+modulate = Color(0.3647059, 1, 1, 1)
+material = ExtResource("3_j0jsv")
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -128.0
+offset_top = -128.0
+offset_right = 896.0
+offset_bottom = 896.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("27_3nif1")
+
+[node name="Line" type="TextureRect" parent="Kid/Hair" unique_id=1227402763]
+modulate = Color(0.58431375, 1, 1, 1)
+material = ExtResource("3_j0jsv")
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -128.0
+offset_top = -128.0
+offset_right = 896.0
+offset_bottom = 896.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("28_wtbdc")
+
+[node name="LineExtra" type="TextureRect" parent="Kid/Hair" unique_id=657166119]
+modulate = Color(0.80784315, 1, 1, 1)
+material = ExtResource("3_j0jsv")
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -128.0
+offset_top = -128.0
+offset_right = 896.0
+offset_bottom = 896.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("29_b3dvi")
+
+[node name="Hand" type="Control" parent="." unique_id=96196700]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="White" type="TextureRect" parent="Hand" unique_id=881573443]
+modulate = Color(0, 1, 1, 1)
+material = ExtResource("10_xtqyo")
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("30_n2758")
+
+[node name="Color" type="TextureRect" parent="Hand" unique_id=1191223934]
+modulate = Color(0.3137255, 1, 1, 1)
+material = ExtResource("10_xtqyo")
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("31_w1j0k")
+
+[node name="Shadow" type="TextureRect" parent="Hand" unique_id=1402063018]
+modulate = Color(0.47058824, 1, 1, 1)
+material = ExtResource("10_xtqyo")
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("32_mnb76")
+
+[node name="Line" type="TextureRect" parent="Hand" unique_id=2049624880]
+modulate = Color(0.7176471, 1, 1, 1)
+material = ExtResource("10_xtqyo")
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("33_1x284")
+
+[node name="LineAccidentals" type="TextureRect" parent="Hand" unique_id=611424131]
+modulate = Color(0.7176471, 1, 1, 1)
+material = ExtResource("10_xtqyo")
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("34_oj28p")
