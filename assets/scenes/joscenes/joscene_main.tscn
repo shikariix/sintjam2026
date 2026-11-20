@@ -9,6 +9,8 @@
 [ext_resource type="Texture2D" uid="uid://b1r6kcutw5200" path="res://assets/art/textures/child/base/T_Kid_Line.png" id="7_1uxkm"]
 [ext_resource type="Resource" uid="uid://bdfqlr7clie41" path="res://assets/resources/colorcoordinates/r_validcoords_hair.tres" id="7_7mxoa"]
 [ext_resource type="Script" uid="uid://dev8lfy3tv3y1" path="res://assets/scripts/josientest/generate_random_kids.gd" id="8_tr10l"]
+[ext_resource type="Script" uid="uid://w2q2ld2nq8q5" path="res://assets/scripts/josientest/apply_kid_data.gd" id="8_wcfqp"]
+[ext_resource type="Resource" uid="uid://dp7up1miikum8" path="res://assets/resources/kids/r_kid_jimothy.tres" id="9_c86je"]
 [ext_resource type="Resource" uid="uid://42yvf1ptb2ax" path="res://assets/resources/colorcoordinates/r_validcoords_skin.tres" id="9_tr10l"]
 [ext_resource type="Resource" uid="uid://beycvawbffjre" path="res://assets/resources/colorcoordinates/r_validcoords_shirt.tres" id="10_kjy2k"]
 [ext_resource type="Material" uid="uid://dyi2f1fnmp23w" path="res://assets/art/materials/m_kid_attribute.tres" id="11_0ipee"]
@@ -89,6 +91,12 @@ hairmaterial = ExtResource("11_0ipee")
 skin_coords = ExtResource("9_tr10l")
 shirt_coords = ExtResource("10_kjy2k")
 hair_coords = ExtResource("7_7mxoa")
+
+[node name="Apply_Kid_Data" type="Node" parent="CanvasLayer/StaticArt_Scaler/Scene01_OpSchoot/Kid" unique_id=778533906]
+script = ExtResource("8_wcfqp")
+debug_data = ExtResource("9_c86je")
+basematerial = ExtResource("4_p13ef")
+hairmaterial = ExtResource("11_0ipee")
 
 [node name="Base" type="Control" parent="CanvasLayer/StaticArt_Scaler/Scene01_OpSchoot/Kid" unique_id=1664224078]
 layout_mode = 1

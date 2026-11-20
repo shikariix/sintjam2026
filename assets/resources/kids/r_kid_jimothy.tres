@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Kid_Data" format=3 uid="uid://dp7up1miikum8"]
+
+[ext_resource type="Script" uid="uid://ceqyh63xxr7k4" path="res://assets/resources/kids/kid_data.gd" id="1_p5ge4"]
+
+[resource]
+script = ExtResource("1_p5ge4")
+name = "Jimothy"
+hair_style = 15
+hair_color = 1
+skin_color = 4
+shirt_color = 8
+shoes_color = 3
+metadata/_custom_type_script = "uid://ceqyh63xxr7k4"
