@@ -3,7 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://bdetdvgyth3mm" path="res://SP_Icon_Temporary.png" id="1_5lu8f"]
 [ext_resource type="Script" uid="uid://drojwte0m6sni" path="res://assets/scripts/boek_ui.gd" id="2_3qpfh"]
 [ext_resource type="Texture2D" uid="uid://cvefoubpvnco4" path="res://assets/art/textures/concept-art-placeholders/T_Concept_BoekPopup.png" id="3_ofhy0"]
-[ext_resource type="PackedScene" uid="uid://d3l0lm3mqpc32" path="res://assets/scenes/kid_container.tscn" id="4_3qpfh"]
+[ext_resource type="PackedScene" uid="uid://d3l0lm3mqpc32" path="res://assets/scenes/ui/ui_book_kidcontainer.tscn" id="4_3qpfh"]
 
 [node name="GroteBoek" type="Control" unique_id=1037165394]
 layout_mode = 3

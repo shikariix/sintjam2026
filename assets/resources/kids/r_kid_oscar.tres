@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="Kid_Data" format=3 uid="uid://dmjs01ttai4nv"]
+
+[ext_resource type="Script" uid="uid://ceqyh63xxr7k4" path="res://assets/resources/kids/kid_data.gd" id="1_0gk1f"]
+
+[resource]
+script = ExtResource("1_0gk1f")
+name = "Oscar"
+sweetness = 1.0
+request = "Sinterklaas... mag ik een nieuwe videogame?"
+hair_style = 5
+hair_color = 5
+skin_color = 1
+shirt_color = 3
+pants_color = 4
+shoes_color = 3
+metadata/_custom_type_script = "uid://ceqyh63xxr7k4"

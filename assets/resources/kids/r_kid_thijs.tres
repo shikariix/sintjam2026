@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="Kid_Data" format=3 uid="uid://qpxnih22khid"]
+
+[ext_resource type="Script" uid="uid://ceqyh63xxr7k4" path="res://assets/resources/kids/kid_data.gd" id="1_gwahi"]
+
+[resource]
+script = ExtResource("1_gwahi")
+name = "Thijs"
+sweetness = 0.66
+request = "Lorem ipsum dolor sit amet. Verstaat u dit? U bent immers al zo oud..."
+hair_style = 2
+hair_color = 2
+skin_color = 6
+pants_color = 6
+shoes_color = 10
+metadata/_custom_type_script = "uid://ceqyh63xxr7k4"

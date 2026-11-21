@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="Kid_Data" format=3 uid="uid://jt6vw10bn752"]
+
+[ext_resource type="Script" uid="uid://ceqyh63xxr7k4" path="res://assets/resources/kids/kid_data.gd" id="1_uwwtk"]
+
+[resource]
+script = ExtResource("1_uwwtk")
+name = "Suus"
+sweetness = 0.447
+request = "Ik weet nog niet zo goed wat ik wil hebben... Misschien een taart."
+hair_style = 13
+skin_color = 3
+shirt_color = 9
+pants_color = 10
+shoes_color = 2
+metadata/_custom_type_script = "uid://ceqyh63xxr7k4"

@@ -2,6 +2,8 @@ class_name Kid_Data
 extends Resource
 
 @export var name : String
+@export_range(0.0, 1.0) var sweetness : float = .0
+@export_multiline() var request : String = ""
 
 @export_category("visuals")
 @export var hair_style : HAIRSTYLE
@@ -13,6 +15,8 @@ extends Resource
 # enums keys and matching coordinates at bottom of script for ease of adding new properties
 
 func _init( p_name = "", 
+			p_sweetness = .0,
+			p_request = "",
 			p_hair_style = HAIRSTYLE.BALD, 
 			p_hair_color = HAIRCOLOR.WHITE, 
 			p_skin_color = SKINCOLOR.RUST, 
@@ -20,6 +24,8 @@ func _init( p_name = "",
 			p_pants_color = CLOTHESCOLOR.WHITE, 
 			p_shoes_color = CLOTHESCOLOR.WHITE ):
 	name = p_name
+	sweetness = p_sweetness
+	request = p_request
 	hair_style = p_hair_style
 	hair_color = p_hair_color
 	skin_color = p_skin_color
@@ -30,6 +36,12 @@ func _init( p_name = "",
 
 
 # ENUMS AND MATCHING VECTORS
+const sweetness_comments : Array[String] = [ " is wel heel stout geweest.", 
+											" was vaker stout dan zoet.", 
+											" was af en toe wel zoet.", 
+											" was behoorlijk zoet", 
+											" is geweldig zoet geweest!"]
+
 enum HAIRCOLOR { WHITE = 0, RED = 1, GINGER = 2, BLONDE = 3, BROWN = 4, DARK_BROWN = 5, BLUEBLACK = 6, PURPLE = 7 }
 enum SKINCOLOR { DARK = 0, RUST = 1, BROWN = 2, ORANGE = 3, TAN = 4, PALE = 5, PALLID = 6 }
 enum CLOTHESCOLOR { WHITE = 0, GREY = 1, LIGHT_RED = 2, RED = 3, YELLOW = 4, GREEN = 5, LIGHT_BLUE = 6, BLUE = 7, PURPLE = 8, PINK = 9, HOT_PINK = 10 }

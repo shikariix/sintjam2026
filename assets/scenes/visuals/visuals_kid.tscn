@@ -1,0 +1,157 @@
+[gd_scene format=3 uid="uid://bwrdi1bucgpdf"]
+
+[ext_resource type="Material" uid="uid://ba2n3w1hy18s3" path="res://assets/art/materials/m_main.tres" id="1_tkuux"]
+[ext_resource type="Texture2D" uid="uid://bjktobjbqa2b5" path="res://assets/art/textures/child/base/T_Kid_WhiteBehind.png" id="2_jhdy4"]
+[ext_resource type="Material" uid="uid://deoovtboa6nwc" path="res://assets/art/materials/m_kid_base.tres" id="3_0xrsg"]
+[ext_resource type="Texture2D" uid="uid://dnp2uclp7aiwq" path="res://assets/art/textures/child/base/T_Kid_Color.png" id="4_sdq63"]
+[ext_resource type="Texture2D" uid="uid://ya4weuvnuvjg" path="res://assets/art/textures/child/base/T_Kid_Shading.png" id="5_d5q0c"]
+[ext_resource type="Texture2D" uid="uid://b1r6kcutw5200" path="res://assets/art/textures/child/base/T_Kid_Line.png" id="6_wkh3f"]
+[ext_resource type="Material" uid="uid://dyi2f1fnmp23w" path="res://assets/art/materials/m_kid_hair.tres" id="7_tnww1"]
+[ext_resource type="Texture2D" uid="uid://u8n2rhdl1s1r" path="res://assets/art/textures/child/hair/T_Kid_Hair_Color.png" id="8_5c370"]
+[ext_resource type="Texture2D" uid="uid://bvgk8727v2gt2" path="res://assets/art/textures/child/hair/T_Kid_Hair_Shadow.png" id="9_ahngv"]
+[ext_resource type="Texture2D" uid="uid://dtta5fq77hpo5" path="res://assets/art/textures/child/hair/T_Kid_Hair_Line.png" id="10_ug5tr"]
+[ext_resource type="Texture2D" uid="uid://k6xws40go486" path="res://assets/art/textures/child/hair/T_Kid_Hair_LineExtra.png" id="11_2vxja"]
+
+[node name="Kid" type="Control" unique_id=346770586]
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -960.0
+offset_top = -540.0
+offset_right = -960.0
+offset_bottom = -540.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Base" type="Control" parent="." unique_id=620987196]
+layout_mode = 1
+anchors_preset = 0
+scale = Vector2(0.75, 0.75)
+
+[node name="BG" type="TextureRect" parent="Base" unique_id=1325362504]
+modulate = Color(0, 1, 1, 1)
+material = ExtResource("1_tkuux")
+layout_mode = 0
+offset_right = 512.0
+offset_bottom = 512.0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture = ExtResource("2_jhdy4")
+stretch_mode = 2
+
+[node name="Color" type="TextureRect" parent="Base" unique_id=236015921]
+modulate = Color(0.32941177, 0, 1, 1)
+material = ExtResource("3_0xrsg")
+layout_mode = 0
+offset_right = 512.0
+offset_bottom = 512.0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture = ExtResource("4_sdq63")
+stretch_mode = 2
+
+[node name="Shading" type="TextureRect" parent="Base" unique_id=2022176762]
+modulate = Color(0.68235296, 0.2, 1, 1)
+material = ExtResource("3_0xrsg")
+layout_mode = 0
+offset_right = 512.0
+offset_bottom = 512.0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture = ExtResource("5_d5q0c")
+stretch_mode = 2
+
+[node name="Line" type="TextureRect" parent="Base" unique_id=725035609]
+modulate = Color(1, 0.4862745, 1, 1)
+material = ExtResource("3_0xrsg")
+layout_mode = 0
+offset_right = 512.0
+offset_bottom = 512.0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture = ExtResource("6_wkh3f")
+stretch_mode = 2
+
+[node name="Hair" type="Control" parent="." unique_id=1518740154]
+layout_mode = 1
+anchors_preset = 0
+offset_left = 165.0
+offset_top = 3.0
+offset_right = 421.0
+offset_bottom = 259.00003
+scale = Vector2(0.75, 0.75)
+
+[node name="Color" type="TextureRect" parent="Hair" unique_id=568689147]
+modulate = Color(0.12156863, 1, 1, 1)
+material = ExtResource("7_tnww1")
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -128.0
+offset_top = -128.0
+offset_right = 896.0
+offset_bottom = 896.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("8_5c370")
+
+[node name="Shading" type="TextureRect" parent="Hair" unique_id=1832890680]
+modulate = Color(0.3647059, 1, 1, 1)
+material = ExtResource("7_tnww1")
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -128.0
+offset_top = -128.0
+offset_right = 896.0
+offset_bottom = 896.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("9_ahngv")
+
+[node name="Line" type="TextureRect" parent="Hair" unique_id=1545510298]
+modulate = Color(0.58431375, 1, 1, 1)
+material = ExtResource("7_tnww1")
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -128.0
+offset_top = -128.0
+offset_right = 896.0
+offset_bottom = 896.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("10_ug5tr")
+
+[node name="LineExtra" type="TextureRect" parent="Hair" unique_id=626442307]
+modulate = Color(0.80784315, 1, 1, 1)
+material = ExtResource("7_tnww1")
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -128.0
+offset_top = -128.0
+offset_right = 896.0
+offset_bottom = 896.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("11_2vxja")

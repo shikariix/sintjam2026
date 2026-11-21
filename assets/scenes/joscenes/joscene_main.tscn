@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://bwt8eeppgbqth"]
 
 [ext_resource type="PackedScene" uid="uid://volwgq0ep10r" path="res://assets/scenes/visuals/visuals_scene_01.tscn" id="1_0cnvd"]
+[ext_resource type="PackedScene" uid="uid://dltnym1xr6reo" path="res://assets/scenes/ui/ui_boek.tscn" id="2_ax352"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xbecr"]
 bg_color = Color(1, 1, 1, 1)
@@ -17,23 +18,6 @@ grow_horizontal = 2
 grow_vertical = 2
 theme_override_styles/panel = SubResource("StyleBoxFlat_xbecr")
 
-[node name="StaticArt_Scaler" type="Control" parent="CanvasLayer" unique_id=625880919]
-layout_mode = 3
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -1280.0
-offset_top = -720.0
-offset_right = 1280.0
-offset_bottom = 720.0
-grow_horizontal = 2
-grow_vertical = 2
-scale = Vector2(0.75, 0.75)
-pivot_offset_ratio = Vector2(0.5, 0.5)
-size_flags_horizontal = 4
-size_flags_vertical = 4
+[node name="Visuals_S01_OpSchoot" parent="CanvasLayer" unique_id=661635230 instance=ExtResource("1_0cnvd")]
 
-[node name="Visuals_S01_OpSchoot" parent="CanvasLayer/StaticArt_Scaler" unique_id=661635230 instance=ExtResource("1_0cnvd")]
-layout_mode = 1
+[node name="UI_Boek" parent="CanvasLayer" unique_id=1467709420 instance=ExtResource("2_ax352")]

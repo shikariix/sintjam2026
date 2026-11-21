@@ -1,0 +1,167 @@
+[gd_scene format=3 uid="uid://dltnym1xr6reo"]
+
+[ext_resource type="Material" uid="uid://ba2n3w1hy18s3" path="res://assets/art/materials/m_main.tres" id="1_kffne"]
+[ext_resource type="Texture2D" uid="uid://c6wxitkrx0yvj" path="res://assets/art/textures/ui_boek/T_UI_Boek_BG_0_white.png" id="2_05fy3"]
+[ext_resource type="Texture2D" uid="uid://b0h50xycyfn66" path="res://assets/art/textures/ui_boek/T_UI_Boek_BG_1_color.png" id="3_l7170"]
+[ext_resource type="Texture2D" uid="uid://dt1ls7qy2pt5o" path="res://assets/art/textures/ui_boek/T_UI_Boek_BG_2_shadow.png" id="4_5wr60"]
+[ext_resource type="Texture2D" uid="uid://5umw8blcbdvo" path="res://assets/art/textures/ui_boek/T_UI_Boek_BG_3_line.png" id="5_qad2u"]
+[ext_resource type="Texture2D" uid="uid://dkyki8rd4g4d0" path="res://assets/art/textures/ui_boek/T_UI_Boek_BG_4_lineextra.png" id="6_pjpjv"]
+[ext_resource type="PackedScene" uid="uid://d3l0lm3mqpc32" path="res://assets/scenes/ui/ui_book_kidcontainer.tscn" id="7_w8sas"]
+[ext_resource type="Resource" uid="uid://dmjs01ttai4nv" path="res://assets/resources/kids/r_kid_oscar.tres" id="8_cx615"]
+[ext_resource type="Resource" uid="uid://jt6vw10bn752" path="res://assets/resources/kids/r_kid_suus.tres" id="9_gqaff"]
+[ext_resource type="Resource" uid="uid://cxfg8860wbk0o" path="res://assets/resources/kids/r_kid_renske.tres" id="10_17a3a"]
+[ext_resource type="Resource" uid="uid://vwml33x4jk2v" path="res://assets/resources/kids/r_kid_jade.tres" id="11_gh5iq"]
+[ext_resource type="Resource" uid="uid://qpxnih22khid" path="res://assets/resources/kids/r_kid_thijs.tres" id="12_f27dx"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bhunq"]
+bg_color = Color(1, 1, 1, 1)
+
+[node name="UI_Boek" type="Control" unique_id=1467709420]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="BookVisual" type="Control" parent="." unique_id=792050895]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 640.0
+offset_bottom = 360.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.75, 0.75)
+
+[node name="Transparent_BG" type="Panel" parent="BookVisual" unique_id=999005820]
+modulate = Color(1, 1, 1, 0.6862745)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_bhunq")
+
+[node name="White" type="TextureRect" parent="BookVisual" unique_id=134494950]
+modulate = Color(0, 1, 1, 1)
+material = ExtResource("1_kffne")
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_05fy3")
+
+[node name="Color" type="TextureRect" parent="BookVisual" unique_id=1802071631]
+modulate = Color(0.3019608, 1, 1, 1)
+material = ExtResource("1_kffne")
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("3_l7170")
+
+[node name="Shadow" type="TextureRect" parent="BookVisual" unique_id=215351624]
+modulate = Color(0.5058824, 1, 1, 1)
+material = ExtResource("1_kffne")
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("4_5wr60")
+
+[node name="Line" type="TextureRect" parent="BookVisual" unique_id=1943501604]
+modulate = Color(0.7294118, 1, 1, 1)
+material = ExtResource("1_kffne")
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("5_qad2u")
+
+[node name="LineExtra" type="TextureRect" parent="BookVisual" unique_id=1416534760]
+material = ExtResource("1_kffne")
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("6_pjpjv")
+
+[node name="BookContents" type="Control" parent="." unique_id=1437551079]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 640.0
+offset_bottom = 360.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.75, 0.75)
+
+[node name="Page_Left" type="Control" parent="BookContents" unique_id=852354643]
+anchors_preset = 0
+offset_left = 505.0
+offset_top = 285.0
+offset_right = 1205.0
+offset_bottom = 1035.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="BookContents/Page_Left" unique_id=876230548]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Kid_0" parent="BookContents/Page_Left/VBoxContainer" unique_id=698149976 instance=ExtResource("7_w8sas")]
+layout_mode = 2
+
+[node name="Kid_1" parent="BookContents/Page_Left/VBoxContainer" unique_id=1579862511 instance=ExtResource("7_w8sas")]
+layout_mode = 2
+debug_data = ExtResource("8_cx615")
+image_side = 1
+
+[node name="Kid_3" parent="BookContents/Page_Left/VBoxContainer" unique_id=2146784097 instance=ExtResource("7_w8sas")]
+layout_mode = 2
+debug_data = ExtResource("9_gqaff")
+
+[node name="Page_Right" type="Control" parent="BookContents" unique_id=693476497]
+anchors_preset = 0
+offset_left = 1345.0
+offset_top = 285.0
+offset_right = 2045.0
+offset_bottom = 1035.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="BookContents/Page_Right" unique_id=853065646]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Kid_0" parent="BookContents/Page_Right/VBoxContainer" unique_id=1709494190 instance=ExtResource("7_w8sas")]
+layout_mode = 2
+debug_data = ExtResource("10_17a3a")
+image_side = 1
+
+[node name="Kid_1" parent="BookContents/Page_Right/VBoxContainer" unique_id=2133770599 instance=ExtResource("7_w8sas")]
+layout_mode = 2
+debug_data = ExtResource("11_gh5iq")
+
+[node name="Kid_3" parent="BookContents/Page_Right/VBoxContainer" unique_id=1559832420 instance=ExtResource("7_w8sas")]
+layout_mode = 2
+debug_data = ExtResource("12_f27dx")
+image_side = 1

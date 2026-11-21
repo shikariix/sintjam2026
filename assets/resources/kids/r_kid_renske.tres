@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="Kid_Data" format=3 uid="uid://cxfg8860wbk0o"]
+
+[ext_resource type="Script" uid="uid://ceqyh63xxr7k4" path="res://assets/resources/kids/kid_data.gd" id="1_rl84q"]
+
+[resource]
+script = ExtResource("1_rl84q")
+name = "Renske"
+sweetness = 0.404
+request = "Sint! Sint! Ik wil een teddybeer!"
+hair_style = 12
+hair_color = 3
+skin_color = 5
+shirt_color = 5
+pants_color = 7
+shoes_color = 1
+metadata/_custom_type_script = "uid://ceqyh63xxr7k4"

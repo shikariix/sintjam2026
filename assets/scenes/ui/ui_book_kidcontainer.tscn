@@ -1,0 +1,218 @@
+[gd_scene format=3 uid="uid://d3l0lm3mqpc32"]
+
+[ext_resource type="Theme" uid="uid://bwulbbd1tuwit" path="res://assets/art/themes/theme_book.tres" id="1_6d7rt"]
+[ext_resource type="Material" uid="uid://deoovtboa6nwc" path="res://assets/art/materials/m_kid_base.tres" id="2_6qxb7"]
+[ext_resource type="Script" uid="uid://w2q2ld2nq8q5" path="res://assets/scripts/josientest/display_kid.gd" id="2_ebapw"]
+[ext_resource type="Texture2D" uid="uid://dg6osvj4tu4c7" path="res://assets/art/textures/ui_boek/T_UI_Boek_Portrait_BG.png" id="3_oc2au"]
+[ext_resource type="Resource" uid="uid://dp7up1miikum8" path="res://assets/resources/kids/r_kid_jimothy.tres" id="3_y0ciw"]
+[ext_resource type="Texture2D" uid="uid://cgtobdyprx56o" path="res://assets/art/textures/ui_boek/T_UI_Boek_Portrait_BG_Stripe.png" id="4_enfvf"]
+[ext_resource type="Texture2D" uid="uid://d2qhir8nshgxc" path="res://assets/art/textures/ui_boek/T_UI_Boek_Portrait_Mask.png" id="4_oc2au"]
+[ext_resource type="Material" uid="uid://ba2n3w1hy18s3" path="res://assets/art/materials/m_main.tres" id="4_yibe6"]
+[ext_resource type="Material" uid="uid://dyi2f1fnmp23w" path="res://assets/art/materials/m_kid_hair.tres" id="5_2jm4u"]
+[ext_resource type="Texture2D" uid="uid://dflnk2m5y35c1" path="res://assets/art/textures/ui_boek/T_UI_Boek_Portrait_Outline.png" id="5_hw3jf"]
+[ext_resource type="PackedScene" uid="uid://bwrdi1bucgpdf" path="res://assets/scenes/visuals/visuals_kid.tscn" id="5_yibe6"]
+
+[node name="KidContainer" type="PanelContainer" unique_id=698149976 node_paths=PackedStringArray("text_container", "kid_name", "kid_sweetness", "kid_request", "kid_image_left", "kid_image_right", "kid_base_visuals", "kid_hair_visuals")]
+self_modulate = Color(1, 1, 1, 0)
+custom_minimum_size = Vector2(700, 250)
+custom_maximum_size = Vector2(700, 250)
+offset_right = 690.0
+offset_bottom = 250.0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource("1_6d7rt")
+script = ExtResource("2_ebapw")
+debug_data = ExtResource("3_y0ciw")
+base_material_src = ExtResource("2_6qxb7")
+hair_material_src = ExtResource("5_2jm4u")
+text_container = NodePath("HBoxContainer/MarginContainer/VBoxContainer")
+kid_name = NodePath("HBoxContainer/MarginContainer/VBoxContainer/Name")
+kid_sweetness = NodePath("HBoxContainer/MarginContainer/VBoxContainer/Sweetness")
+kid_request = NodePath("HBoxContainer/MarginContainer/VBoxContainer/RequestedGift")
+kid_image_left = NodePath("HBoxContainer/KidImage_Left")
+kid_image_right = NodePath("HBoxContainer/KidImage_Right")
+kid_base_visuals = [NodePath("HBoxContainer/KidImage_Left/BG"), NodePath("HBoxContainer/KidImage_Left/Stripey"), NodePath("HBoxContainer/KidImage_Left/KidMask/Kid/Base/Color"), NodePath("HBoxContainer/KidImage_Left/KidMask/Kid/Base/Shading"), NodePath("HBoxContainer/KidImage_Left/KidMask/Kid/Base/Line"), NodePath("HBoxContainer/KidImage_Right/BG"), NodePath("HBoxContainer/KidImage_Right/Stripey"), NodePath("HBoxContainer/KidImage_Right/KidMask/Kid/Base/Color"), NodePath("HBoxContainer/KidImage_Right/KidMask/Kid/Base/Shading"), NodePath("HBoxContainer/KidImage_Right/KidMask/Kid/Base/Line")]
+kid_hair_visuals = [NodePath("HBoxContainer/KidImage_Left/KidMask/Kid/Hair/Color"), NodePath("HBoxContainer/KidImage_Left/KidMask/Kid/Hair/Shading"), NodePath("HBoxContainer/KidImage_Left/KidMask/Kid/Hair/Line"), NodePath("HBoxContainer/KidImage_Left/KidMask/Kid/Hair/LineExtra"), NodePath("HBoxContainer/KidImage_Right/KidMask/Kid/Hair/Color"), NodePath("HBoxContainer/KidImage_Right/KidMask/Kid/Hair/Shading"), NodePath("HBoxContainer/KidImage_Right/KidMask/Kid/Hair/Line"), NodePath("HBoxContainer/KidImage_Right/KidMask/Kid/Hair/LineExtra")]
+
+[node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=856867857]
+layout_mode = 2
+
+[node name="KidImage_Left" type="Control" parent="HBoxContainer" unique_id=101284748]
+custom_minimum_size = Vector2(250, 250)
+layout_mode = 2
+
+[node name="BG" type="TextureRect" parent="HBoxContainer/KidImage_Left" unique_id=1236891574]
+modulate = Color(0, 1, 1, 1)
+material = ExtResource("2_6qxb7")
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -128.0
+offset_top = -128.0
+offset_right = 128.0
+offset_bottom = 128.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("3_oc2au")
+
+[node name="Stripey" type="TextureRect" parent="HBoxContainer/KidImage_Left" unique_id=894208226]
+modulate = Color(0.34509805, 1, 1, 1)
+material = ExtResource("2_6qxb7")
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -128.0
+offset_top = -128.0
+offset_right = 128.0
+offset_bottom = 128.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("4_enfvf")
+
+[node name="KidMask" type="TextureRect" parent="HBoxContainer/KidImage_Left" unique_id=843024260]
+clip_children = 1
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -128.0
+offset_top = -128.0
+offset_right = 128.0
+offset_bottom = 128.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("4_oc2au")
+
+[node name="Kid" parent="HBoxContainer/KidImage_Left/KidMask" unique_id=346770586 instance=ExtResource("5_yibe6")]
+layout_mode = 1
+offset_left = 254.0
+offset_top = -93.0
+offset_right = 254.0
+offset_bottom = -93.0
+scale = Vector2(-1, 1)
+
+[node name="Outline" type="TextureRect" parent="HBoxContainer/KidImage_Left" unique_id=1560354987]
+material = ExtResource("4_yibe6")
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("5_hw3jf")
+
+[node name="MarginContainer" type="MarginContainer" parent="HBoxContainer" unique_id=1710772938]
+custom_maximum_size = Vector2(-1, 450)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="VBoxContainer" type="VBoxContainer" parent="HBoxContainer/MarginContainer" unique_id=1730754923]
+layout_mode = 2
+
+[node name="Name" type="Label" parent="HBoxContainer/MarginContainer/VBoxContainer" unique_id=730302298]
+layout_mode = 2
+theme_type_variation = &"HeaderLarge"
+text = "-Naam-"
+
+[node name="Sweetness" type="Label" parent="HBoxContainer/MarginContainer/VBoxContainer" unique_id=1300014581]
+custom_maximum_size = Vector2(470, -1)
+layout_mode = 2
+text = "-Zoet geweest?-"
+
+[node name="RequestedGift" type="Label" parent="HBoxContainer/MarginContainer/VBoxContainer" unique_id=1527154135]
+custom_maximum_size = Vector2(470, -1)
+layout_mode = 2
+text = "-Gewenst cadeautje?-"
+autowrap_mode = 2
+
+[node name="KidImage_Right" type="Control" parent="HBoxContainer" unique_id=221932553]
+visible = false
+custom_minimum_size = Vector2(250, 250)
+layout_mode = 2
+
+[node name="BG" type="TextureRect" parent="HBoxContainer/KidImage_Right" unique_id=1528879507]
+modulate = Color(0, 1, 1, 1)
+material = ExtResource("2_6qxb7")
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -128.0
+offset_top = -128.0
+offset_right = 128.0
+offset_bottom = 128.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("3_oc2au")
+
+[node name="Stripey" type="TextureRect" parent="HBoxContainer/KidImage_Right" unique_id=770342231]
+modulate = Color(0.34509805, 1, 1, 1)
+material = ExtResource("2_6qxb7")
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -128.0
+offset_top = -128.0
+offset_right = 128.0
+offset_bottom = 128.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("4_enfvf")
+
+[node name="KidMask" type="TextureRect" parent="HBoxContainer/KidImage_Right" unique_id=1347930173]
+clip_children = 1
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -128.0
+offset_top = -128.0
+offset_right = 128.0
+offset_bottom = 128.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("4_oc2au")
+
+[node name="Kid" parent="HBoxContainer/KidImage_Right/KidMask" unique_id=2077527663 instance=ExtResource("5_yibe6")]
+layout_mode = 1
+offset_left = -253.0
+offset_top = -93.0
+offset_right = -253.0
+offset_bottom = -93.0
+
+[node name="Outline" type="TextureRect" parent="HBoxContainer/KidImage_Right" unique_id=82543267]
+material = ExtResource("4_yibe6")
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("5_hw3jf")

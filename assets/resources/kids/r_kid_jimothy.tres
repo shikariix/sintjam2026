@@ -5,6 +5,7 @@
 [resource]
 script = ExtResource("1_p5ge4")
 name = "Jimothy"
+request = "Hoi Sint, ik wil dit jaar heeeuuuuul graag een nieuwe fiets!"
 hair_style = 15
 hair_color = 1
 skin_color = 4

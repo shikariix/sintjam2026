@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="Kid_Data" format=3 uid="uid://vwml33x4jk2v"]
+
+[ext_resource type="Script" uid="uid://ceqyh63xxr7k4" path="res://assets/resources/kids/kid_data.gd" id="1_ibvqg"]
+
+[resource]
+script = ExtResource("1_ibvqg")
+name = "Jade"
+sweetness = 0.759
+request = "Hey sinterklaas, wat is het coolste cadeau dat je hebt?"
+hair_style = 9
+hair_color = 6
+skin_color = 2
+shirt_color = 7
+pants_color = 1
+shoes_color = 3
+metadata/_custom_type_script = "uid://ceqyh63xxr7k4"

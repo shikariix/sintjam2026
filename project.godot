@@ -24,7 +24,6 @@ window/stretch/aspect="expand"
 
 [editor]
 
-movie_writer/movie_file="D:/_Users/Documents/Creations/Godot/_Recorder/sintjam.avi"
 movie_writer/fps=30
 
 [gui]
