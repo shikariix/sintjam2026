@@ -6,22 +6,22 @@ Design:
 
 Artwork:
 	- full art: sintertoys
-	- full art: dorp
-	- full art: boek bg
+	- mokerveel cadeau art???
 	- full art: titelscherm (optioneel)
 	- UI art: knop bg
 	- UI art: grote boek icon
 	- UI art: terug knop icon
 	- UI art: grote boek componenten
-		> kind portret outline
-		> kind portret achtergrond?
 		> score sterren oid
 		> (meer moet nog ontworpen)
 	- UI art: sintertoys popup componenten
 	- UI art: dorp bovenbalk
+	- UI art: dorp kind pointer
+	- verbeter dorp art (optioneel)
+	- kind verschillende niveaus van blijheid (optioneel)
 
 UI implementatie:
-	- het grote boek
+	- het grote boek (incl score versie)
 	- sintertoys popup
 
 Tech art:
@@ -35,3 +35,8 @@ Done:
 	- aanpasbaar kind systeem
 	- aanpasbaar kind art
 	- full art: bij sint op schoot
+	- full art: boek bg
+	- UI art: grote boek componenten
+		> kind portret outline
+		> kind portret achtergrond?
+	- full art: dorp

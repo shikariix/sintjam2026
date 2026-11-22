@@ -1,11 +1,7 @@
 [gd_scene format=3 uid="uid://volwgq0ep10r"]
 
-[ext_resource type="Script" uid="uid://dev8lfy3tv3y1" path="res://assets/scripts/josientest/generate_random_kids.gd" id="1_m0uoy"]
 [ext_resource type="Material" uid="uid://deoovtboa6nwc" path="res://assets/art/materials/m_kid_base.tres" id="2_tfdcd"]
 [ext_resource type="Material" uid="uid://dyi2f1fnmp23w" path="res://assets/art/materials/m_kid_hair.tres" id="3_j0jsv"]
-[ext_resource type="Resource" uid="uid://42yvf1ptb2ax" path="res://assets/resources/colorcoordinates/r_validcoords_skin.tres" id="4_fg5ui"]
-[ext_resource type="Resource" uid="uid://beycvawbffjre" path="res://assets/resources/colorcoordinates/r_validcoords_shirt.tres" id="5_e6fmw"]
-[ext_resource type="Resource" uid="uid://bdfqlr7clie41" path="res://assets/resources/colorcoordinates/r_validcoords_hair.tres" id="6_hftg4"]
 [ext_resource type="Script" uid="uid://w2q2ld2nq8q5" path="res://assets/scripts/josientest/display_kid.gd" id="7_y8kie"]
 [ext_resource type="Resource" uid="uid://dp7up1miikum8" path="res://assets/resources/kids/r_kid_jimothy.tres" id="8_p0vdf"]
 [ext_resource type="Texture2D" uid="uid://b47jewflpicg3" path="res://assets/art/textures/concept-art-placeholders/T_Concept_Scene01_OpSchoot.png" id="9_j4rv2"]
@@ -35,14 +31,6 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-
-[node name="Generate_Random_Kid" type="Node" parent="." unique_id=852471993]
-script = ExtResource("1_m0uoy")
-basematerial = ExtResource("2_tfdcd")
-hairmaterial = ExtResource("3_j0jsv")
-skin_coords = ExtResource("4_fg5ui")
-shirt_coords = ExtResource("5_e6fmw")
-hair_coords = ExtResource("6_hftg4")
 
 [node name="Apply_Kid_Data" type="Node" parent="." unique_id=1501139519 node_paths=PackedStringArray("kid_base_visuals", "kid_hair_visuals")]
 script = ExtResource("7_y8kie")

@@ -25,6 +25,7 @@ func _ready():
 	if debug_data != null:
 		_apply_kid_data(debug_data)
 	
+	# swap between left / right version of row in book scene
 	if text_container != null:
 		if image_side == SIDE.RIGHT:
 			text_container.layout_direction = Control.LAYOUT_DIRECTION_RTL
@@ -34,14 +35,16 @@ func _ready():
 		kid_image_right.visible = (image_side == SIDE.RIGHT)
 
 func _apply_kid_data(data : Kid_Data):
+	# set text fields based on kid data (for book scene)
 	if kid_name != null:
 		kid_name.text = data.name
 	if kid_sweetness != null:
-		kid_sweetness.text = str(data.sweetness)
-		kid_sweetness.text = data.name + Kid_Data.sweetness_comments[int(floor(data.sweetness * (Kid_Data.sweetness_comments.size() - 1)))]
+		# sweetness text is based on the float in the kid data, and then picks the best comment for that
+		kid_sweetness.text = data.name + Kid_Data.sweetness_comments[int(floor(data.sweetness * 1.1 * (Kid_Data.sweetness_comments.size() - 1)))]
 	if kid_request != null:
-		kid_request.text = data.request
+		kid_request.text = '\"' + data.request + '\"'
 	
+	# set local materials, and set parameters based on kid data
 	if base_material == null:
 		base_material = base_material_src.duplicate()
 		for visual : TextureRect in kid_base_visuals:
