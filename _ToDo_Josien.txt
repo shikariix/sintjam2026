@@ -17,7 +17,6 @@ Artwork:
 	- UI art: sintertoys popup componenten
 	- UI art: dorp bovenbalk
 	- UI art: dorp kind pointer
-	- verbeter dorp art (optioneel)
 	- kind verschillende niveaus van blijheid (optioneel)
 
 UI implementatie:
@@ -40,3 +39,4 @@ Done:
 		> kind portret outline
 		> kind portret achtergrond?
 	- full art: dorp
+	- verbeter dorp art (optioneel)
