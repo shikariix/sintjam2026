@@ -32,6 +32,7 @@ void fragment() {
 	float is_shirt = step(.5, color.g);
 	float is_pants = step(.5, color.b);
 	float is_skin = step(2.5, is_shoes + is_shirt + is_pants);
+	float is_eyes = clamp(1.0 - is_shoes - is_shirt - is_pants, 0, 1);
 	
 	// sample colormaps
 	vec3 shoes = texture(shoes_color_tex, shoes_color - vec2(vertex_color.g, 0)).rgb;
@@ -46,5 +47,5 @@ void fragment() {
 	color.rgb = mix(color.rgb, skin, is_skin);
 	
 	COLOR = color;
-	COLOR.a *= vertex_color.a;
+	COLOR.a *= vertex_color.a * max(max(is_skin, is_eyes), vertex_color.b);
 }

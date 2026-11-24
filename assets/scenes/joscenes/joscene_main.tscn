@@ -3,6 +3,8 @@
 [ext_resource type="PackedScene" uid="uid://volwgq0ep10r" path="res://assets/scenes/visuals/visuals_scene_01.tscn" id="1_0cnvd"]
 [ext_resource type="PackedScene" uid="uid://dltnym1xr6reo" path="res://assets/scenes/ui/ui_boek.tscn" id="2_ax352"]
 [ext_resource type="PackedScene" uid="uid://d2kolqb0wws4w" path="res://assets/scenes/visuals/visuals_scene_03.tscn" id="2_oribv"]
+[ext_resource type="PackedScene" uid="uid://b21c8c4botns7" path="res://assets/scenes/ui/ui_dorp_droptarget.tscn" id="4_xof8p"]
+[ext_resource type="Texture2D" uid="uid://bdetdvgyth3mm" path="res://SP_Icon_Temporary.png" id="5_u8b64"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xbecr"]
 bg_color = Color(1, 1, 1, 1)
@@ -24,5 +26,39 @@ visible = false
 
 [node name="visuals_scene_03" parent="CanvasLayer" unique_id=546237335 instance=ExtResource("2_oribv")]
 
+[node name="dorp ui test" type="Control" parent="CanvasLayer" unique_id=948933892]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ui_dorp_droptarget" parent="CanvasLayer/dorp ui test" unique_id=256998212 instance=ExtResource("4_xof8p")]
+layout_mode = 0
+offset_left = 507.0
+offset_top = 733.0
+offset_right = 507.0
+offset_bottom = 733.0
+
+[node name="ui_dorp_droptarget2" parent="CanvasLayer/dorp ui test" unique_id=587140189 instance=ExtResource("4_xof8p")]
+layout_mode = 0
+offset_left = 1613.0
+offset_top = 509.0
+offset_right = 1613.0
+offset_bottom = 509.0
+
+[node name="ui_dorp_droptarget3" parent="CanvasLayer/dorp ui test" unique_id=270205506 instance=ExtResource("4_xof8p")]
+layout_mode = 0
+offset_left = 1155.0
+offset_top = 891.0
+offset_right = 1155.0
+offset_bottom = 891.0
+
+[node name="TextureRect_DroppedObject" parent="CanvasLayer/dorp ui test/ui_dorp_droptarget3/PanelContainer/HBoxContainer" parent_id_path=PackedInt32Array(270205506, 1223498436) index="1" unique_id=126989093]
+texture = ExtResource("5_u8b64")
+
 [node name="ui_boek" parent="CanvasLayer" unique_id=1467709420 instance=ExtResource("2_ax352")]
 visible = false
+
+[editable path="CanvasLayer/dorp ui test/ui_dorp_droptarget3"]

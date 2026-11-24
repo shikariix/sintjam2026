@@ -1,8 +1,7 @@
 
 Design:
-	- grote boek UI
-	- sintertoys popup UI
-	- dorp bovenbalk UI
+	- ontwerp sintertoys popup UI
+	- ontwerp dorp bovenbalk UI
 
 Artwork:
 	- full art: sintertoys
@@ -13,10 +12,8 @@ Artwork:
 	- UI art: terug knop icon
 	- UI art: grote boek componenten
 		> score sterren oid
-		> (meer moet nog ontworpen)
 	- UI art: sintertoys popup componenten
 	- UI art: dorp bovenbalk
-	- UI art: dorp kind pointer
 	- kind verschillende niveaus van blijheid (optioneel)
 
 UI implementatie:
@@ -34,9 +31,11 @@ Done:
 	- aanpasbaar kind systeem
 	- aanpasbaar kind art
 	- full art: bij sint op schoot
+	- ontwerp grote boek UI
 	- full art: boek bg
 	- UI art: grote boek componenten
 		> kind portret outline
 		> kind portret achtergrond?
 	- full art: dorp
 	- verbeter dorp art (optioneel)
+	- UI art: dorp kind pointer

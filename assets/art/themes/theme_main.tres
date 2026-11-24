@@ -1,7 +1,17 @@
 [gd_resource type="Theme" format=3 uid="uid://d70f2x3swfow"]
 
 [ext_resource type="FontFile" uid="uid://bom0sent7w4j" path="res://assets/art/fonts/Chalkiez-Regular.otf" id="1_e5l3s"]
+[ext_resource type="Texture2D" uid="uid://co23gg06c1060" path="res://assets/art/textures/s03_dorp/T_UI_Dorp_Bubble_full_scaled.png" id="1_w8sl6"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_u8b64"]
+texture = ExtResource("1_w8sl6")
+texture_margin_left = 22.0
+texture_margin_top = 22.0
+texture_margin_right = 22.0
+texture_margin_bottom = 22.0
+draw_center = false
 
 [resource]
 default_font = ExtResource("1_e5l3s")
 default_font_size = 32
+PanelContainer/styles/panel = SubResource("StyleBoxTexture_u8b64")

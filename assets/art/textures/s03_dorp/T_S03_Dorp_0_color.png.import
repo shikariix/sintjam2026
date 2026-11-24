@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://crvqq14i1looa"
-path="res://.godot/imported/T_S01_Dorp_0_color.png-3b54f9c5ffc4bde1ea62368d8a81756f.ctex"
+path="res://.godot/imported/T_S03_Dorp_0_color.png-5bb0ccefe0cf24294513fe5da1a7c839.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/art/textures/s03_dorp/T_S01_Dorp_0_color.png"
-dest_files=["res://.godot/imported/T_S01_Dorp_0_color.png-3b54f9c5ffc4bde1ea62368d8a81756f.ctex"]
+source_file="res://assets/art/textures/s03_dorp/T_S03_Dorp_0_color.png"
+dest_files=["res://.godot/imported/T_S03_Dorp_0_color.png-5bb0ccefe0cf24294513fe5da1a7c839.ctex"]
 
 [params]
 

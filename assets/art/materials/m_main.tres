@@ -6,4 +6,4 @@
 [resource]
 shader = ExtResource("1_imulw")
 shader_parameter/noise_tex = ExtResource("2_aaa8t")
-shader_parameter/wiggle_intensity = 0.7
+shader_parameter/wiggle_intensity = 0.2

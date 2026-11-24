@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d3bwgqpi0760k"
-path="res://.godot/imported/T_S01_Dorp_4_lineextra.png-5e8cc66b6de7cb45464b75352fea25dd.ctex"
+uid="uid://ca1qxuc10ym6c"
+path="res://.godot/imported/T_UI_Dorp_Tail_full.png-4eab7df71b0051a6dbf8734a7a67b2e5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/art/textures/s03_dorp/T_S01_Dorp_4_lineextra.png"
-dest_files=["res://.godot/imported/T_S01_Dorp_4_lineextra.png-5e8cc66b6de7cb45464b75352fea25dd.ctex"]
+source_file="res://assets/art/textures/s03_dorp/T_UI_Dorp_Tail_full.png"
+dest_files=["res://.godot/imported/T_UI_Dorp_Tail_full.png-4eab7df71b0051a6dbf8734a7a67b2e5.ctex"]
 
 [params]
 

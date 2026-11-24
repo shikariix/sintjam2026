@@ -8,7 +8,7 @@
 [resource]
 shader = ExtResource("1_icxpp")
 shader_parameter/noise_tex = ExtResource("2_uju3q")
-shader_parameter/wiggle_intensity = 0.7
+shader_parameter/wiggle_intensity = 0.2
 shader_parameter/skin_color_tex = ExtResource("4_uju3q")
 shader_parameter/skin_color = Vector2(0.75, 0)
 shader_parameter/shoes_color_tex = ExtResource("3_pe3di")

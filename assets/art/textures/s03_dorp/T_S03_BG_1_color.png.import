@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://btpl0qi1jbvhu"
-path="res://.godot/imported/T_S01_Dorp_2b_more colours.png-2ce4319d6559e8985f659134f4441121.ctex"
+uid="uid://tdnf2tbv276j"
+path="res://.godot/imported/T_S03_BG_1_color.png-cdf519a0c69fc042972194c775af7402.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/art/textures/s03_dorp/T_S01_Dorp_2b_more colours.png"
-dest_files=["res://.godot/imported/T_S01_Dorp_2b_more colours.png-2ce4319d6559e8985f659134f4441121.ctex"]
+source_file="res://assets/art/textures/s03_dorp/T_S03_BG_1_color.png"
+dest_files=["res://.godot/imported/T_S03_BG_1_color.png-cdf519a0c69fc042972194c775af7402.ctex"]
 
 [params]
 

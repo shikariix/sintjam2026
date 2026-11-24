@@ -1,0 +1,80 @@
+[gd_scene format=3 uid="uid://b21c8c4botns7"]
+
+[ext_resource type="Material" uid="uid://ba2n3w1hy18s3" path="res://assets/art/materials/m_main.tres" id="1_noyed"]
+[ext_resource type="Script" uid="uid://w2q2ld2nq8q5" path="res://assets/scripts/josientest/display_kid.gd" id="2_ds51t"]
+[ext_resource type="Resource" uid="uid://vwml33x4jk2v" path="res://assets/resources/kids/r_kid_jade.tres" id="3_gvaix"]
+[ext_resource type="Material" uid="uid://deoovtboa6nwc" path="res://assets/art/materials/m_kid_base.tres" id="4_10y00"]
+[ext_resource type="Material" uid="uid://dyi2f1fnmp23w" path="res://assets/art/materials/m_kid_hair.tres" id="5_htkg5"]
+[ext_resource type="PackedScene" uid="uid://bwrdi1bucgpdf" path="res://assets/scenes/visuals/visuals_kid.tscn" id="6_jsgjb"]
+[ext_resource type="Texture2D" uid="uid://ca1qxuc10ym6c" path="res://assets/art/textures/s03_dorp/T_UI_Dorp_Tail_full.png" id="7_c8bg6"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bhunq"]
+bg_color = Color(1, 1, 1, 1)
+
+[node name="ui_dorp_droptarget" type="Control" unique_id=256998212]
+custom_maximum_size = Vector2(0, 0)
+layout_mode = 3
+anchors_preset = 0
+
+[node name="PanelContainer" type="PanelContainer" parent="." unique_id=1511020634]
+material = ExtResource("1_noyed")
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -107.0
+offset_top = -256.0
+offset_right = 123.0
+offset_bottom = -26.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="PanelContainer" unique_id=1223498436]
+layout_mode = 2
+
+[node name="KidSize" type="Control" parent="PanelContainer/HBoxContainer" unique_id=1428770728]
+custom_minimum_size = Vector2(170, 170)
+custom_maximum_size = Vector2(170, 170)
+layout_mode = 2
+
+[node name="KidContainer" type="Panel" parent="PanelContainer/HBoxContainer/KidSize" unique_id=61779737 node_paths=PackedStringArray("kid_base_visuals", "kid_hair_visuals")]
+modulate = Color(1, 1, 0, 1)
+clip_children = 1
+custom_minimum_size = Vector2(190, 190)
+layout_mode = 0
+offset_left = -10.0
+offset_top = 0.5
+offset_right = 180.0
+offset_bottom = 190.5
+theme_override_styles/panel = SubResource("StyleBoxFlat_bhunq")
+script = ExtResource("2_ds51t")
+debug_data = ExtResource("3_gvaix")
+base_material_src = ExtResource("4_10y00")
+hair_material_src = ExtResource("5_htkg5")
+kid_base_visuals = [NodePath("Kid/Base/Color"), NodePath("Kid/Base/Shading"), NodePath("Kid/Base/Line")]
+kid_hair_visuals = [NodePath("Kid/Hair/Color"), NodePath("Kid/Hair/Shading"), NodePath("Kid/Hair/Line"), NodePath("Kid/Hair/LineExtra")]
+
+[node name="Kid" parent="PanelContainer/HBoxContainer/KidSize/KidContainer" unique_id=346770586 instance=ExtResource("6_jsgjb")]
+layout_mode = 1
+offset_left = -252.0
+offset_top = -92.5
+offset_right = -252.0
+offset_bottom = -92.5
+
+[node name="TextureRect_DroppedObject" type="TextureRect" parent="PanelContainer/HBoxContainer" unique_id=126989093]
+custom_maximum_size = Vector2(170, 170)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="Tail" type="TextureRect" parent="." unique_id=657149841]
+material = ExtResource("1_noyed")
+layout_mode = 0
+offset_left = -35.0
+offset_top = -61.0
+offset_right = 66.0
+offset_bottom = 29.0
+scale = Vector2(0.75, 0.75)
+texture = ExtResource("7_c8bg6")

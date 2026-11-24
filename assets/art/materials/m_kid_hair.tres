@@ -7,7 +7,7 @@
 [resource]
 shader = ExtResource("1_1774y")
 shader_parameter/noise_tex = ExtResource("2_fdrmx")
-shader_parameter/wiggle_intensity = 0.7
+shader_parameter/wiggle_intensity = 0.2
 shader_parameter/cells = Vector2(4, 4)
 shader_parameter/current_cell = Vector2(0, 3)
 shader_parameter/attribute_color_tex = ExtResource("2_hn4uw")
