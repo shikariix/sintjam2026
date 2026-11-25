@@ -2,8 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://bdetdvgyth3mm" path="res://SP_Icon_Temporary.png" id="1_5lu8f"]
 [ext_resource type="Script" uid="uid://drojwte0m6sni" path="res://assets/scripts/boek_ui.gd" id="2_3qpfh"]
-[ext_resource type="Texture2D" uid="uid://cvefoubpvnco4" path="res://assets/art/textures/concept-art-placeholders/T_Concept_BoekPopup.png" id="3_ofhy0"]
-[ext_resource type="PackedScene" uid="uid://d3l0lm3mqpc32" path="res://assets/scenes/ui/ui_book_kidcontainer.tscn" id="4_3qpfh"]
+[ext_resource type="PackedScene" uid="uid://dltnym1xr6reo" path="res://assets/scenes/ui/ui_boek.tscn" id="2_5lu8f"]
 
 [node name="GroteBoek" type="Control" unique_id=1037165394]
 layout_mode = 3
@@ -15,113 +14,30 @@ grow_vertical = 2
 
 [node name="TextureButton" type="TextureButton" parent="." unique_id=1307009115]
 layout_mode = 1
-anchors_preset = 1
-anchor_left = 1.0
+anchors_preset = -1
+anchor_left = 0.86700004
 anchor_right = 1.0
-offset_left = -256.0
-offset_bottom = 256.0
+anchor_bottom = 0.23700002
+offset_left = -0.6401367
+offset_bottom = 0.039978027
 grow_horizontal = 0
+mouse_default_cursor_shape = 2
 texture_normal = ExtResource("1_5lu8f")
 
-[node name="PanelContainer" type="PanelContainer" parent="." unique_id=1921208007]
+[node name="UI_Boek" parent="." unique_id=1467709420 instance=ExtResource("2_5lu8f")]
+visible = false
 layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
 script = ExtResource("2_3qpfh")
 
-[node name="TextureRect" type="TextureRect" parent="PanelContainer" unique_id=363864675]
-layout_mode = 2
-texture = ExtResource("3_ofhy0")
-expand_mode = 2
-
-[node name="CloseButton" type="TextureButton" parent="PanelContainer" unique_id=14504436]
-layout_mode = 2
+[node name="CloseButton" type="TextureButton" parent="UI_Boek" unique_id=14504436]
+layout_mode = 0
+offset_left = 1664.0
+offset_right = 1920.0
+offset_bottom = 256.0
 size_flags_horizontal = 8
 size_flags_vertical = 0
+mouse_default_cursor_shape = 2
 texture_normal = ExtResource("1_5lu8f")
 
-[node name="GridContainer" type="GridContainer" parent="PanelContainer" unique_id=1861610507]
-layout_mode = 2
-size_flags_horizontal = 4
-size_flags_vertical = 4
-offset_transform_enabled = true
-columns = 2
-
-[node name="KidContainer" parent="PanelContainer/GridContainer" unique_id=698149976 instance=ExtResource("4_3qpfh")]
-layout_mode = 2
-
-[node name="KidContainer2" type="PanelContainer" parent="PanelContainer/GridContainer" unique_id=1951768595]
-layout_mode = 2
-size_flags_horizontal = 4
-size_flags_vertical = 4
-
-[node name="MarginContainer" type="MarginContainer" parent="PanelContainer/GridContainer/KidContainer2" unique_id=415617376]
-layout_mode = 2
-theme_override_constants/margin_left = 20
-theme_override_constants/margin_top = 20
-theme_override_constants/margin_right = 20
-theme_override_constants/margin_bottom = 20
-
-[node name="HBoxContainer" type="HBoxContainer" parent="PanelContainer/GridContainer/KidContainer2/MarginContainer" unique_id=1220455606]
-layout_mode = 2
-
-[node name="KidImage" type="TextureRect" parent="PanelContainer/GridContainer/KidContainer2/MarginContainer/HBoxContainer" unique_id=847105708]
-layout_mode = 2
-texture = ExtResource("1_5lu8f")
-stretch_mode = 2
-
-[node name="VBoxContainer" type="VBoxContainer" parent="PanelContainer/GridContainer/KidContainer2/MarginContainer/HBoxContainer" unique_id=2072287382]
-layout_mode = 2
-
-[node name="KidName" type="Label" parent="PanelContainer/GridContainer/KidContainer2/MarginContainer/HBoxContainer/VBoxContainer" unique_id=1279137231]
-layout_mode = 2
-text = "Placeholder"
-
-[node name="Wil Graag" type="Label" parent="PanelContainer/GridContainer/KidContainer2/MarginContainer/HBoxContainer/VBoxContainer" unique_id=2031632085]
-layout_mode = 2
-text = "Wil graag:"
-
-[node name="Label" type="Label" parent="PanelContainer/GridContainer/KidContainer2/MarginContainer/HBoxContainer/VBoxContainer" unique_id=1355365828]
-layout_mode = 2
-text = "Zoet/Stout"
-
-[node name="KidContainer3" type="PanelContainer" parent="PanelContainer/GridContainer" unique_id=1373218111]
-layout_mode = 2
-size_flags_horizontal = 4
-size_flags_vertical = 4
-
-[node name="MarginContainer" type="MarginContainer" parent="PanelContainer/GridContainer/KidContainer3" unique_id=33565340]
-layout_mode = 2
-theme_override_constants/margin_left = 20
-theme_override_constants/margin_top = 20
-theme_override_constants/margin_right = 20
-theme_override_constants/margin_bottom = 20
-
-[node name="HBoxContainer" type="HBoxContainer" parent="PanelContainer/GridContainer/KidContainer3/MarginContainer" unique_id=647147330]
-layout_mode = 2
-
-[node name="KidImage" type="TextureRect" parent="PanelContainer/GridContainer/KidContainer3/MarginContainer/HBoxContainer" unique_id=15144818]
-layout_mode = 2
-texture = ExtResource("1_5lu8f")
-stretch_mode = 2
-
-[node name="VBoxContainer" type="VBoxContainer" parent="PanelContainer/GridContainer/KidContainer3/MarginContainer/HBoxContainer" unique_id=2075655003]
-layout_mode = 2
-
-[node name="KidName" type="Label" parent="PanelContainer/GridContainer/KidContainer3/MarginContainer/HBoxContainer/VBoxContainer" unique_id=1119118625]
-layout_mode = 2
-text = "Placeholder"
-
-[node name="Wil Graag" type="Label" parent="PanelContainer/GridContainer/KidContainer3/MarginContainer/HBoxContainer/VBoxContainer" unique_id=82506718]
-layout_mode = 2
-text = "Wil graag:"
-
-[node name="Label" type="Label" parent="PanelContainer/GridContainer/KidContainer3/MarginContainer/HBoxContainer/VBoxContainer" unique_id=1172019154]
-layout_mode = 2
-text = "Zoet/Stout"
-
-[connection signal="button_up" from="TextureButton" to="PanelContainer" method="toggle_grote_boek"]
-[connection signal="button_up" from="PanelContainer/CloseButton" to="PanelContainer" method="toggle_grote_boek"]
+[connection signal="button_up" from="TextureButton" to="UI_Boek" method="toggle_grote_boek"]
+[connection signal="button_up" from="UI_Boek/CloseButton" to="UI_Boek" method="toggle_grote_boek"]
