@@ -12,7 +12,7 @@
 [ext_resource type="Texture2D" uid="uid://dflnk2m5y35c1" path="res://assets/art/textures/ui_boek/T_UI_Boek_Portrait_Outline.png" id="5_hw3jf"]
 [ext_resource type="PackedScene" uid="uid://bwrdi1bucgpdf" path="res://assets/scenes/visuals/visuals_kid.tscn" id="5_yibe6"]
 
-[node name="KidContainer" type="PanelContainer" unique_id=698149976 node_paths=PackedStringArray("text_container", "kid_name", "kid_sweetness", "kid_request", "kid_image_left", "kid_image_right", "kid_base_visuals", "kid_hair_visuals")]
+[node name="Boek_KidContainer" type="PanelContainer" unique_id=698149976 node_paths=PackedStringArray("text_container", "kid_name", "kid_sweetness", "kid_request", "kid_image_left", "kid_image_right", "kid_base_visuals", "kid_hair_visuals")]
 self_modulate = Color(1, 1, 1, 0)
 custom_minimum_size = Vector2(700, 250)
 custom_maximum_size = Vector2(700, 250)

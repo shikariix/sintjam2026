@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://cwsavokrvlhb3"]
+
+[node name="GiftBar" type="PanelContainer" unique_id=926712671]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -284.0
+offset_top = 40.0
+offset_right = -204.0
+offset_bottom = 250.0
+grow_horizontal = 0
+pivot_offset_ratio = Vector2(1, 0.5)
+size_flags_horizontal = 8
+theme_type_variation = &"PanelContainer_Wide"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=1727688235]
+custom_minimum_size = Vector2(0, 150)
+custom_maximum_size = Vector2(-1, 150)
+layout_mode = 2
+size_flags_horizontal = 8
+size_flags_vertical = 4
+alignment = 2

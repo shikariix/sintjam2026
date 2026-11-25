@@ -30,6 +30,7 @@ offset_right = 123.0
 offset_bottom = -26.0
 grow_horizontal = 2
 grow_vertical = 2
+theme_type_variation = &"PanelContainer_SmallSquare"
 
 [node name="HBoxContainer" type="HBoxContainer" parent="PanelContainer" unique_id=1223498436]
 layout_mode = 2

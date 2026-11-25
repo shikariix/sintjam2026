@@ -1,0 +1,46 @@
+[gd_scene format=3 uid="uid://cr23nrfjehok7"]
+
+[ext_resource type="Texture2D" uid="uid://bhme8ba1rv3u3" path="res://assets/art/textures/ui_boekknop/T_UI_BoekKnop_BG.png" id="1_wipsx"]
+[ext_resource type="Texture2D" uid="uid://dw17beeor1ntd" path="res://assets/art/textures/ui_boekknop/T_UI_BoekKnop_Boek.png" id="2_kknar"]
+[ext_resource type="Texture2D" uid="uid://cjklymso3rnj4" path="res://assets/art/textures/ui_boekknop/T_UI_BoekKnop_Kruisje.png" id="3_dt287"]
+
+[node name="boek_openclosebutton" type="Control" unique_id=993157952]
+custom_minimum_size = Vector2(367, 367)
+custom_maximum_size = Vector2(367, 367)
+layout_mode = 3
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -289.0
+offset_top = 14.0
+offset_right = 78.0
+offset_bottom = 381.0
+grow_horizontal = 0
+scale = Vector2(0.75, 0.75)
+
+[node name="BG" type="TextureRect" parent="." unique_id=719574534]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_wipsx")
+
+[node name="Boek" type="TextureButton" parent="." unique_id=2023519329]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture_normal = ExtResource("2_kknar")
+texture_pressed = ExtResource("2_kknar")
+texture_hover = ExtResource("2_kknar")
+texture_disabled = ExtResource("2_kknar")
+texture_focused = ExtResource("2_kknar")
+
+[node name="Kruisje" type="TextureButton" parent="." unique_id=1376618358]
+visible = false
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture_normal = ExtResource("3_dt287")
+texture_pressed = ExtResource("3_dt287")
+texture_hover = ExtResource("3_dt287")
+texture_disabled = ExtResource("3_dt287")
+texture_focused = ExtResource("3_dt287")

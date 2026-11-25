@@ -2,6 +2,7 @@
 
 [ext_resource type="FontFile" uid="uid://bom0sent7w4j" path="res://assets/art/fonts/Chalkiez-Regular.otf" id="1_e5l3s"]
 [ext_resource type="Texture2D" uid="uid://co23gg06c1060" path="res://assets/art/textures/s03_dorp/T_UI_Dorp_Bubble_full_scaled.png" id="1_w8sl6"]
+[ext_resource type="Texture2D" uid="uid://biafjbr82iv30" path="res://assets/art/textures/s03_dorp/T_UI_PakjesBalk_scaled.png" id="2_rittm"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_u8b64"]
 texture = ExtResource("1_w8sl6")
@@ -11,7 +12,17 @@ texture_margin_right = 22.0
 texture_margin_bottom = 22.0
 draw_center = false
 
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_wc8mc"]
+texture = ExtResource("2_rittm")
+texture_margin_left = 30.0
+texture_margin_top = 30.0
+texture_margin_right = 50.0
+texture_margin_bottom = 30.0
+
 [resource]
 default_font = ExtResource("1_e5l3s")
 default_font_size = 32
-PanelContainer/styles/panel = SubResource("StyleBoxTexture_u8b64")
+PanelContainer_SmallSquare/base_type = &"PanelContainer"
+PanelContainer_SmallSquare/styles/panel = SubResource("StyleBoxTexture_u8b64")
+PanelContainer_Wide/base_type = &"PanelContainer"
+PanelContainer_Wide/styles/panel = SubResource("StyleBoxTexture_wc8mc")

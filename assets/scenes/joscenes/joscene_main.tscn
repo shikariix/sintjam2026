@@ -4,7 +4,9 @@
 [ext_resource type="PackedScene" uid="uid://dltnym1xr6reo" path="res://assets/scenes/ui/ui_boek.tscn" id="2_ax352"]
 [ext_resource type="PackedScene" uid="uid://d2kolqb0wws4w" path="res://assets/scenes/visuals/visuals_scene_03.tscn" id="2_oribv"]
 [ext_resource type="PackedScene" uid="uid://b21c8c4botns7" path="res://assets/scenes/ui/ui_dorp_droptarget.tscn" id="4_xof8p"]
+[ext_resource type="PackedScene" uid="uid://cwsavokrvlhb3" path="res://assets/scenes/ui/ui_giftbar.tscn" id="5_gaav8"]
 [ext_resource type="Texture2D" uid="uid://bdetdvgyth3mm" path="res://SP_Icon_Temporary.png" id="5_u8b64"]
+[ext_resource type="PackedScene" uid="uid://cr23nrfjehok7" path="res://assets/scenes/ui/ui_boek_openclosebutton.tscn" id="7_gaav8"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xbecr"]
 bg_color = Color(1, 1, 1, 1)
@@ -58,7 +60,11 @@ offset_bottom = 891.0
 [node name="TextureRect_DroppedObject" parent="CanvasLayer/dorp ui test/ui_dorp_droptarget3/PanelContainer/HBoxContainer" parent_id_path=PackedInt32Array(270205506, 1223498436) index="1" unique_id=126989093]
 texture = ExtResource("5_u8b64")
 
+[node name="GiftBar" parent="CanvasLayer" unique_id=926712671 instance=ExtResource("5_gaav8")]
+
 [node name="ui_boek" parent="CanvasLayer" unique_id=1467709420 instance=ExtResource("2_ax352")]
 visible = false
+
+[node name="BookButton" parent="CanvasLayer" unique_id=993157952 instance=ExtResource("7_gaav8")]
 
 [editable path="CanvasLayer/dorp ui test/ui_dorp_droptarget3"]

@@ -6,7 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://dt1ls7qy2pt5o" path="res://assets/art/textures/ui_boek/T_UI_Boek_BG_2_shadow.png" id="4_5wr60"]
 [ext_resource type="Texture2D" uid="uid://5umw8blcbdvo" path="res://assets/art/textures/ui_boek/T_UI_Boek_BG_3_line.png" id="5_qad2u"]
 [ext_resource type="Texture2D" uid="uid://dkyki8rd4g4d0" path="res://assets/art/textures/ui_boek/T_UI_Boek_BG_4_lineextra.png" id="6_pjpjv"]
-[ext_resource type="PackedScene" uid="uid://d3l0lm3mqpc32" path="res://assets/scenes/ui/ui_book_kidcontainer.tscn" id="7_w8sas"]
+[ext_resource type="PackedScene" uid="uid://d3l0lm3mqpc32" path="res://assets/scenes/ui/ui_boek_kidcontainer.tscn" id="7_w8sas"]
 [ext_resource type="Resource" uid="uid://dmjs01ttai4nv" path="res://assets/resources/kids/r_kid_oscar.tres" id="8_cx615"]
 [ext_resource type="Resource" uid="uid://jt6vw10bn752" path="res://assets/resources/kids/r_kid_suus.tres" id="9_gqaff"]
 [ext_resource type="Resource" uid="uid://cxfg8860wbk0o" path="res://assets/resources/kids/r_kid_renske.tres" id="10_17a3a"]
