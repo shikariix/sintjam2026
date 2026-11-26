@@ -1,5 +1,6 @@
 [gd_scene format=3 uid="uid://bwx331fposoce"]
 
+[ext_resource type="Script" uid="uid://cy4lnoycf6dav" path="res://assets/scenes/game.gd" id="1_5aext"]
 [ext_resource type="PackedScene" uid="uid://cgs8vqlifkcjh" path="res://assets/scenes/grote_boek.tscn" id="1_cb66b"]
 [ext_resource type="PackedScene" uid="uid://cikhbhlpntvl8" path="res://assets/scenes/sarah_testing.tscn" id="2_dis88"]
 [ext_resource type="Script" uid="uid://b57o17dn4tx3v" path="res://assets/scripts/grote_boek.gd" id="3_j62u1"]
@@ -14,6 +15,8 @@
 [ext_resource type="Resource" uid="uid://qpxnih22khid" path="res://assets/resources/kids/r_kid_thijs.tres" id="10_5jdip"]
 
 [node name="Game" type="Node" unique_id=461088466]
+script = ExtResource("1_5aext")
+all_kids = Array[ExtResource("4_pkhv0")]([ExtResource("5_i358u"), ExtResource("6_s2rys"), ExtResource("7_fc420"), ExtResource("8_kc0sw"), ExtResource("9_fqk1v"), ExtResource("10_5jdip")])
 
 [node name="SarahTesting" parent="." unique_id=1870176279 instance=ExtResource("2_dis88")]
 
@@ -21,7 +24,6 @@
 mouse_filter = 1
 mouse_behavior_recursive = 1
 script = ExtResource("3_j62u1")
-all_kids = Array[ExtResource("4_pkhv0")]([ExtResource("5_i358u"), ExtResource("6_s2rys"), ExtResource("7_fc420"), ExtResource("8_kc0sw"), ExtResource("9_fqk1v"), ExtResource("10_5jdip")])
 
 [node name="Grote_Boek_Knop" type="Control" parent="." unique_id=1699852376]
 layout_mode = 3

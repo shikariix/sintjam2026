@@ -7,11 +7,6 @@
 [ext_resource type="Texture2D" uid="uid://5umw8blcbdvo" path="res://assets/art/textures/ui_boek/T_UI_Boek_BG_3_line.png" id="5_qad2u"]
 [ext_resource type="Texture2D" uid="uid://dkyki8rd4g4d0" path="res://assets/art/textures/ui_boek/T_UI_Boek_BG_4_lineextra.png" id="6_pjpjv"]
 [ext_resource type="PackedScene" uid="uid://d3l0lm3mqpc32" path="res://assets/scenes/ui/ui_boek_kidcontainer.tscn" id="7_w8sas"]
-[ext_resource type="Resource" uid="uid://dmjs01ttai4nv" path="res://assets/resources/kids/r_kid_oscar.tres" id="8_cx615"]
-[ext_resource type="Resource" uid="uid://jt6vw10bn752" path="res://assets/resources/kids/r_kid_suus.tres" id="9_gqaff"]
-[ext_resource type="Resource" uid="uid://cxfg8860wbk0o" path="res://assets/resources/kids/r_kid_renske.tres" id="10_17a3a"]
-[ext_resource type="Resource" uid="uid://vwml33x4jk2v" path="res://assets/resources/kids/r_kid_jade.tres" id="11_gh5iq"]
-[ext_resource type="Resource" uid="uid://qpxnih22khid" path="res://assets/resources/kids/r_kid_thijs.tres" id="12_f27dx"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bhunq"]
 bg_color = Color(1, 1, 1, 1)
@@ -132,15 +127,16 @@ grow_vertical = 2
 
 [node name="Kid_0" parent="BookContents/Page_Left/VBoxContainer" unique_id=698149976 instance=ExtResource("7_w8sas")]
 layout_mode = 2
+debug_data = null
 
 [node name="Kid_1" parent="BookContents/Page_Left/VBoxContainer" unique_id=1579862511 instance=ExtResource("7_w8sas")]
 layout_mode = 2
-debug_data = ExtResource("8_cx615")
+debug_data = null
 image_side = 1
 
 [node name="Kid_3" parent="BookContents/Page_Left/VBoxContainer" unique_id=2146784097 instance=ExtResource("7_w8sas")]
 layout_mode = 2
-debug_data = ExtResource("9_gqaff")
+debug_data = null
 
 [node name="Page_Right" type="Control" parent="BookContents" unique_id=693476497]
 anchors_preset = 0
@@ -159,14 +155,14 @@ grow_vertical = 2
 
 [node name="Kid_0" parent="BookContents/Page_Right/VBoxContainer" unique_id=1709494190 instance=ExtResource("7_w8sas")]
 layout_mode = 2
-debug_data = ExtResource("10_17a3a")
+debug_data = null
 image_side = 1
 
 [node name="Kid_1" parent="BookContents/Page_Right/VBoxContainer" unique_id=2133770599 instance=ExtResource("7_w8sas")]
 layout_mode = 2
-debug_data = ExtResource("11_gh5iq")
+debug_data = null
 
 [node name="Kid_3" parent="BookContents/Page_Right/VBoxContainer" unique_id=1559832420 instance=ExtResource("7_w8sas")]
 layout_mode = 2
-debug_data = ExtResource("12_f27dx")
+debug_data = null
 image_side = 1
