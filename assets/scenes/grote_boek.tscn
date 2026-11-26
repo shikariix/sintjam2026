@@ -1,6 +1,5 @@
 [gd_scene format=3 uid="uid://cgs8vqlifkcjh"]
 
-[ext_resource type="Texture2D" uid="uid://bdetdvgyth3mm" path="res://SP_Icon_Temporary.png" id="1_5lu8f"]
 [ext_resource type="Script" uid="uid://drojwte0m6sni" path="res://assets/scripts/boek_ui.gd" id="2_3qpfh"]
 [ext_resource type="PackedScene" uid="uid://dltnym1xr6reo" path="res://assets/scenes/ui/ui_boek.tscn" id="2_5lu8f"]
 
@@ -12,32 +11,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="TextureButton" type="TextureButton" parent="." unique_id=1307009115]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.86700004
-anchor_right = 1.0
-anchor_bottom = 0.23700002
-offset_left = -0.6401367
-offset_bottom = 0.039978027
-grow_horizontal = 0
-mouse_default_cursor_shape = 2
-texture_normal = ExtResource("1_5lu8f")
-
 [node name="UI_Boek" parent="." unique_id=1467709420 instance=ExtResource("2_5lu8f")]
 visible = false
 layout_mode = 1
 script = ExtResource("2_3qpfh")
-
-[node name="CloseButton" type="TextureButton" parent="UI_Boek" unique_id=14504436]
-layout_mode = 0
-offset_left = 1664.0
-offset_right = 1920.0
-offset_bottom = 256.0
-size_flags_horizontal = 8
-size_flags_vertical = 0
-mouse_default_cursor_shape = 2
-texture_normal = ExtResource("1_5lu8f")
-
-[connection signal="button_up" from="TextureButton" to="UI_Boek" method="toggle_grote_boek"]
-[connection signal="button_up" from="UI_Boek/CloseButton" to="UI_Boek" method="toggle_grote_boek"]

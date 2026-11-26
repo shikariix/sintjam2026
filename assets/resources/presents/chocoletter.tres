@@ -7,5 +7,6 @@
 script = ExtResource("1_nklfo")
 texture = ExtResource("2_ar7ff")
 present_name = "Chocolade Letter"
-silliness = 1
+genieten = 1.0
+populair = 0.5
 metadata/_custom_type_script = "uid://b1jls3pyt88l2"

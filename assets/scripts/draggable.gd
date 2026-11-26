@@ -13,7 +13,8 @@ func _get_drag_data(_at_position: Vector2) -> Variant:
 	
 	var preview_texture = TextureRect.new()
 	preview_texture.texture = texture
-	preview_texture.size = Vector2(20,20)
+	preview_texture.expand_mode = EXPAND_FIT_WIDTH_PROPORTIONAL
+	preview_texture.size = Vector2(50,50)
 	
 	var preview = Control.new()
 	preview.add_child(preview_texture)

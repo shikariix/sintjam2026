@@ -1,7 +1,48 @@
 [gd_scene format=3 uid="uid://bwx331fposoce"]
 
 [ext_resource type="PackedScene" uid="uid://cgs8vqlifkcjh" path="res://assets/scenes/grote_boek.tscn" id="1_cb66b"]
+[ext_resource type="PackedScene" uid="uid://cikhbhlpntvl8" path="res://assets/scenes/sarah_testing.tscn" id="2_dis88"]
+[ext_resource type="Script" uid="uid://b57o17dn4tx3v" path="res://assets/scripts/grote_boek.gd" id="3_j62u1"]
+[ext_resource type="Texture2D" uid="uid://dw17beeor1ntd" path="res://assets/art/textures/ui_boekknop/T_UI_BoekKnop_Boek.png" id="4_5aext"]
+[ext_resource type="Script" uid="uid://ceqyh63xxr7k4" path="res://assets/resources/kids/kid_data.gd" id="4_pkhv0"]
+[ext_resource type="Texture2D" uid="uid://cjklymso3rnj4" path="res://assets/art/textures/ui_boekknop/T_UI_BoekKnop_Kruisje.png" id="5_3w2km"]
+[ext_resource type="Resource" uid="uid://vwml33x4jk2v" path="res://assets/resources/kids/r_kid_jade.tres" id="5_i358u"]
+[ext_resource type="Resource" uid="uid://dp7up1miikum8" path="res://assets/resources/kids/r_kid_jimothy.tres" id="6_s2rys"]
+[ext_resource type="Resource" uid="uid://dmjs01ttai4nv" path="res://assets/resources/kids/r_kid_oscar.tres" id="7_fc420"]
+[ext_resource type="Resource" uid="uid://cxfg8860wbk0o" path="res://assets/resources/kids/r_kid_renske.tres" id="8_kc0sw"]
+[ext_resource type="Resource" uid="uid://jt6vw10bn752" path="res://assets/resources/kids/r_kid_suus.tres" id="9_fqk1v"]
+[ext_resource type="Resource" uid="uid://qpxnih22khid" path="res://assets/resources/kids/r_kid_thijs.tres" id="10_5jdip"]
 
 [node name="Game" type="Node" unique_id=461088466]
 
+[node name="SarahTesting" parent="." unique_id=1870176279 instance=ExtResource("2_dis88")]
+
 [node name="GroteBoek" parent="." unique_id=1037165394 instance=ExtResource("1_cb66b")]
+mouse_filter = 1
+mouse_behavior_recursive = 1
+script = ExtResource("3_j62u1")
+all_kids = Array[ExtResource("4_pkhv0")]([ExtResource("5_i358u"), ExtResource("6_s2rys"), ExtResource("7_fc420"), ExtResource("8_kc0sw"), ExtResource("9_fqk1v"), ExtResource("10_5jdip")])
+
+[node name="Grote_Boek_Knop" type="Control" parent="." unique_id=1699852376]
+layout_mode = 3
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -40.0
+offset_bottom = 40.0
+grow_horizontal = 0
+
+[node name="TextureButton" type="TextureButton" parent="Grote_Boek_Knop" unique_id=1550665045]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -367.0
+offset_bottom = 367.0
+grow_horizontal = 0
+mouse_default_cursor_shape = 2
+toggle_mode = true
+texture_normal = ExtResource("4_5aext")
+texture_focused = ExtResource("5_3w2km")
+
+[connection signal="toggled" from="Grote_Boek_Knop/TextureButton" to="GroteBoek" method="toggle_book"]
