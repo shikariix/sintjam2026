@@ -70,7 +70,7 @@ grow_horizontal = 2
 grow_vertical = 2
 scale = Vector2(0.75, 0.75)
 
-[node name="TextureRect" type="TextureRect" parent="Background" unique_id=989922517]
+[node name="Color" type="TextureRect" parent="Background" unique_id=989922517]
 modulate = Color(0, 1, 1, 1)
 material = ExtResource("10_xtqyo")
 layout_mode = 1
@@ -79,9 +79,10 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+mouse_filter = 2
 texture = ExtResource("11_r35un")
 
-[node name="TextureRect2" type="TextureRect" parent="Background" unique_id=1418470830]
+[node name="Line" type="TextureRect" parent="Background" unique_id=1418470830]
 modulate = Color(0.2901961, 1, 1, 1)
 material = ExtResource("10_xtqyo")
 layout_mode = 1
@@ -90,9 +91,10 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+mouse_filter = 2
 texture = ExtResource("12_wxr2b")
 
-[node name="TextureRect3" type="TextureRect" parent="Background" unique_id=1536397057]
+[node name="LineExtra" type="TextureRect" parent="Background" unique_id=1536397057]
 modulate = Color(0.42745098, 1, 1, 1)
 material = ExtResource("10_xtqyo")
 layout_mode = 1
@@ -101,6 +103,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+mouse_filter = 2
 texture = ExtResource("13_cdhww")
 
 [node name="Vignette_BluePink" type="TextureRect" parent="Background" unique_id=1585511589]
@@ -112,6 +115,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+mouse_filter = 2
 texture = ExtResource("14_l15pt")
 
 [node name="Vignette_Purple" type="TextureRect" parent="Background" unique_id=1252172160]
@@ -123,6 +127,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+mouse_filter = 2
 texture = ExtResource("15_lqsuf")
 
 [node name="Vignette_Black" type="TextureRect" parent="Background" unique_id=847953590]
@@ -133,6 +138,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+mouse_filter = 2
 texture = ExtResource("16_wg5qu")
 
 [node name="Characters" type="Control" parent="." unique_id=909352330]
@@ -155,6 +161,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+mouse_filter = 2
 texture = ExtResource("17_6jxxr")
 
 [node name="Color" type="TextureRect" parent="Characters" unique_id=1576740998]
@@ -166,6 +173,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+mouse_filter = 2
 texture = ExtResource("18_sb3u3")
 
 [node name="Shadow" type="TextureRect" parent="Characters" unique_id=1245085562]
@@ -177,6 +185,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+mouse_filter = 2
 texture = ExtResource("19_f2ouh")
 
 [node name="Line" type="TextureRect" parent="Characters" unique_id=895972504]
@@ -188,6 +197,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+mouse_filter = 2
 texture = ExtResource("20_w3un5")
 
 [node name="LineAccidentals" type="TextureRect" parent="Characters" unique_id=1578364394]
@@ -198,6 +208,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+mouse_filter = 2
 texture = ExtResource("21_uknjk")
 
 [node name="Kid" parent="." unique_id=346770586 instance=ExtResource("22_1hbff")]
@@ -234,6 +245,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+mouse_filter = 2
 texture = ExtResource("30_n2758")
 
 [node name="Color" type="TextureRect" parent="Hand" unique_id=1191223934]
@@ -245,6 +257,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+mouse_filter = 2
 texture = ExtResource("31_w1j0k")
 
 [node name="Shadow" type="TextureRect" parent="Hand" unique_id=1402063018]
@@ -256,6 +269,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+mouse_filter = 2
 texture = ExtResource("32_mnb76")
 
 [node name="Line" type="TextureRect" parent="Hand" unique_id=2049624880]
@@ -267,6 +281,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+mouse_filter = 2
 texture = ExtResource("33_1x284")
 
 [node name="LineAccidentals" type="TextureRect" parent="Hand" unique_id=611424131]
@@ -278,4 +293,5 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+mouse_filter = 2
 texture = ExtResource("34_oj28p")

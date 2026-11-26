@@ -1,28 +1,30 @@
 
 Design:
+	- ontwerp kind speech bubble
 	- ontwerp sintertoys popup UI
-	- ontwerp dorp bovenbalk UI
+	- ontwerp titelscherm (optioneel)
 
 Artwork:
-	- full art: sintertoys
-	- mokerveel cadeau art???
+	- mokerveel cadeau art
 	- full art: titelscherm (optioneel)
-	- UI art: knop bg
-	- UI art: grote boek icon
-	- UI art: terug knop icon
+	- UI art: kind speech bubble
 	- UI art: grote boek componenten
 		> score sterren oid
 	- UI art: sintertoys popup componenten
-	- UI art: dorp bovenbalk
 	- kind verschillende niveaus van blijheid (optioneel)
+	- itch thumbnail
 
 UI implementatie:
 	- het grote boek (incl score versie)
+	- sintertoys gift hitboxes
 	- sintertoys popup
 
 Tech art:
 	- fadeout / fadein in stijl
 	- kind-op-schoot swap in stijl (optioneel)
+
+Asset implementatie:
+	- gift resources
 
 
 
@@ -39,3 +41,9 @@ Done:
 	- full art: dorp
 	- verbeter dorp art (optioneel)
 	- UI art: dorp kind pointer
+	- ontwerp dorp bovenbalk UI
+	- UI art: knop bg
+	- UI art: grote boek icon
+	- UI art: terug knop icon
+	- UI art: dorp bovenbalk
+	- full art: sintertoys

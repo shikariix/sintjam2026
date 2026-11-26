@@ -54,6 +54,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+mouse_filter = 2
 texture = ExtResource("2_05fy3")
 
 [node name="Color" type="TextureRect" parent="BookVisual" unique_id=1802071631]
@@ -65,6 +66,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+mouse_filter = 2
 texture = ExtResource("3_l7170")
 
 [node name="Shadow" type="TextureRect" parent="BookVisual" unique_id=215351624]
@@ -76,6 +78,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+mouse_filter = 2
 texture = ExtResource("4_5wr60")
 
 [node name="Line" type="TextureRect" parent="BookVisual" unique_id=1943501604]
@@ -87,6 +90,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+mouse_filter = 2
 texture = ExtResource("5_qad2u")
 
 [node name="LineExtra" type="TextureRect" parent="BookVisual" unique_id=1416534760]
@@ -97,6 +101,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+mouse_filter = 2
 texture = ExtResource("6_pjpjv")
 
 [node name="BookContents" type="Control" parent="." unique_id=1437551079]

@@ -39,6 +39,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+mouse_filter = 2
 texture = ExtResource("2_b1xee")
 
 [node name="BG_Color_Scribble" type="TextureRect" parent="Background" unique_id=690478052]
@@ -50,6 +51,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+mouse_filter = 2
 texture = ExtResource("3_63mdi")
 
 [node name="BG_Color_Accidentals" type="TextureRect" parent="Background" unique_id=1061135693]
@@ -61,6 +63,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+mouse_filter = 2
 texture = ExtResource("4_63mdi")
 
 [node name="Color" type="TextureRect" parent="Background" unique_id=344914728]
@@ -72,6 +75,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+mouse_filter = 2
 texture = ExtResource("4_ca15l")
 
 [node name="Accidentals" type="TextureRect" parent="Background" unique_id=544247237]
@@ -83,6 +87,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+mouse_filter = 2
 texture = ExtResource("5_wkbfy")
 
 [node name="Shading" type="TextureRect" parent="Background" unique_id=1260718807]
@@ -94,6 +99,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+mouse_filter = 2
 texture = ExtResource("6_lxbw3")
 
 [node name="MoreColours" type="TextureRect" parent="Background" unique_id=1915353857]
@@ -105,6 +111,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+mouse_filter = 2
 texture = ExtResource("8_ca15l")
 
 [node name="Line" type="TextureRect" parent="Background" unique_id=1023477277]
@@ -116,6 +123,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+mouse_filter = 2
 texture = ExtResource("7_0crmc")
 
 [node name="LineExtra" type="TextureRect" parent="Background" unique_id=1358368411]
@@ -126,4 +134,5 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+mouse_filter = 2
 texture = ExtResource("8_dagpb")

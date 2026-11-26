@@ -3,6 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://volwgq0ep10r" path="res://assets/scenes/visuals/visuals_scene_01.tscn" id="1_0cnvd"]
 [ext_resource type="PackedScene" uid="uid://dltnym1xr6reo" path="res://assets/scenes/ui/ui_boek.tscn" id="2_ax352"]
 [ext_resource type="PackedScene" uid="uid://d2kolqb0wws4w" path="res://assets/scenes/visuals/visuals_scene_03.tscn" id="2_oribv"]
+[ext_resource type="PackedScene" uid="uid://dg7x0bgi3006c" path="res://assets/scenes/visuals/visuals_scene_02.tscn" id="2_tpmrs"]
 [ext_resource type="PackedScene" uid="uid://b21c8c4botns7" path="res://assets/scenes/ui/ui_dorp_droptarget.tscn" id="4_xof8p"]
 [ext_resource type="PackedScene" uid="uid://cwsavokrvlhb3" path="res://assets/scenes/ui/ui_giftbar.tscn" id="5_gaav8"]
 [ext_resource type="Texture2D" uid="uid://bdetdvgyth3mm" path="res://SP_Icon_Temporary.png" id="5_u8b64"]
@@ -26,9 +27,13 @@ theme_override_styles/panel = SubResource("StyleBoxFlat_xbecr")
 [node name="visuals_scene_01" parent="CanvasLayer" unique_id=661635230 instance=ExtResource("1_0cnvd")]
 visible = false
 
+[node name="visuals_scene_02" parent="CanvasLayer" unique_id=1951435640 instance=ExtResource("2_tpmrs")]
+
 [node name="visuals_scene_03" parent="CanvasLayer" unique_id=546237335 instance=ExtResource("2_oribv")]
+visible = false
 
 [node name="dorp ui test" type="Control" parent="CanvasLayer" unique_id=948933892]
+visible = false
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
