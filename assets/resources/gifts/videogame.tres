@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="Present_Resource" format=3 uid="uid://b1rooktrp3j6a"]
 
-[ext_resource type="Script" uid="uid://b1jls3pyt88l2" path="res://assets/resources/presents/PresentResource.gd" id="1_6xu2k"]
+[ext_resource type="Script" uid="uid://b1jls3pyt88l2" path="res://assets/resources/gifts/gift_data.gd" id="1_6xu2k"]
 [ext_resource type="Texture2D" uid="uid://bdetdvgyth3mm" path="res://SP_Icon_Temporary.png" id="2_pscfj"]
 
 [resource]

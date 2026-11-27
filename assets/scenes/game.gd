@@ -4,7 +4,7 @@ extends Node
 
 @export var all_kids: Array[Kid_Data] 
 
-@export var purchased_gifts: Array[Present_Resource] #todo: remove export
+@export var purchased_gifts: Array[Gift_Data] #todo: remove export
 
 var grote_boek: Grote_Boek
 
@@ -18,7 +18,7 @@ func _process(delta: float) -> void:
 	pass
 
 
-func add_gift(new_gift: Present_Resource) -> void:
+func add_gift(new_gift: Gift_Data) -> void:
 	purchased_gifts.append(new_gift)
 	
 func remove_gift(index: int) -> void:

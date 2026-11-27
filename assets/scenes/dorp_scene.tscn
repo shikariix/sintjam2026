@@ -3,8 +3,9 @@
 [ext_resource type="PackedScene" uid="uid://d2kolqb0wws4w" path="res://assets/scenes/visuals/visuals_scene_03.tscn" id="1_baod3"]
 [ext_resource type="PackedScene" uid="uid://b21c8c4botns7" path="res://assets/scenes/ui/ui_dorp_droptarget.tscn" id="2_jvh87"]
 [ext_resource type="PackedScene" uid="uid://cwsavokrvlhb3" path="res://assets/scenes/ui/ui_giftbar.tscn" id="3_wxkbm"]
+[ext_resource type="Script" uid="uid://x4gg3ww1veko" path="res://assets/scripts/giftbar.gd" id="4_3plmg"]
 [ext_resource type="Script" uid="uid://buamn4yt55dex" path="res://assets/scripts/draggable.gd" id="4_wxkbm"]
-[ext_resource type="Resource" uid="uid://b1rooktrp3j6a" path="res://assets/resources/presents/videogame.tres" id="5_3plmg"]
+[ext_resource type="Resource" uid="uid://b1rooktrp3j6a" path="res://assets/resources/gifts/videogame.tres" id="5_3plmg"]
 
 [node name="DorpScene" type="Control" unique_id=1934010388]
 layout_mode = 3
@@ -74,6 +75,7 @@ offset_top = 0.0
 offset_right = 40.0
 offset_bottom = 210.0
 grow_horizontal = 2
+script = ExtResource("4_3plmg")
 
 [node name="DragContainer" type="PanelContainer" parent="." unique_id=320771953]
 layout_mode = 1

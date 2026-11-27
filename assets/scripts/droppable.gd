@@ -6,7 +6,7 @@ func _ready() -> void:
 	texture_for_drop = $HBoxContainer/TextureRect_DroppedObject
 
 func _can_drop_data(at_position: Vector2, data: Variant) -> bool:
-	return data is Present_Resource
+	return data is Gift_Data
 	
 func _drop_data(at_position: Vector2, data: Variant) -> void:
 	texture_for_drop.set_texture(data.texture)

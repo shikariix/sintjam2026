@@ -1,4 +1,4 @@
-class_name Present_Resource
+class_name Gift_Data
 extends Resource
 
 @export var texture: Texture

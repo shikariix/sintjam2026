@@ -4,7 +4,7 @@ extends TextureRect
 ##object can be dropped on specific spots on map
 ##dropping makes it disappear and connects it to information on map point
 
-@export var present_data: Present_Resource
+@export var present_data: Gift_Data
 
 func _ready() -> void:
 	set_texture(present_data.texture)
